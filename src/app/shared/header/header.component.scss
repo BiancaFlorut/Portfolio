@@ -1,0 +1,22 @@
+@mixin horizontalPadding {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+header{
+  >img{
+      width: 64px;
+      height: 64px;
+  }
+  position: absolute;
+  top: 0;
+  height: 120px;
+  z-index: 2;
+  padding: 24px;
+  @include horizontalPadding;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  box-sizing: border-box;
+}
