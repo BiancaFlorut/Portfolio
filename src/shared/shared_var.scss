@@ -1,0 +1,10 @@
+$sidePadding: 100px;
+$headingColor: #ff5959;
+$strongRed: #FF5959;
+
+@mixin displayFlex($fl_d: row, $jc: center, $ai: center) {
+  display: flex;
+  flex-direction: $fl_d;
+  justify-content: $jc;
+  align-items: $ai;
+}

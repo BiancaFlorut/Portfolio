@@ -1,0 +1,61 @@
+@import "../../../shared/shared_var.scss";
+
+.container {
+  @include displayFlex(column, center, flex-end);
+  padding: 0 $sidePadding;
+  gap: 13px;
+  padding-bottom: 123px;
+}
+
+.ellipse-container {
+  padding-top: 64px;
+  padding-bottom: 40px;
+  width: 100%;
+  @include displayFlex(row, flex-end, flex-end);
+  >div {
+    width: 50%;
+    @include displayFlex(row, center, center);
+  }
+}
+
+.ellipse {
+  height: 82px;
+  width: 82px;
+}
+
+.top {
+  display: flex;
+  gap: 75px;
+}
+
+.bottom {
+  width: 100%;
+  @include displayFlex(row, flex-end, center);
+  >div {
+    width: 50%;
+    @include displayFlex(row, center, center);
+  }
+}
+
+.left {
+  > span {
+    font-family: "Baloo";
+    line-height: 118px;
+    font-size: 118px;
+    letter-spacing: 1px;
+    color: $headingColor;
+    font-weight: 800;
+  }
+  @include displayFlex(column, center, center);
+  flex: 1;
+}
+
+.right {
+  flex: 1;
+  > span {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27.6px;
+  } 
+  @include displayFlex(column, center, center);
+}
