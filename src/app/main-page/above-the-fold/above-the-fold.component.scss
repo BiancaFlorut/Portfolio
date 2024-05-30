@@ -1,0 +1,92 @@
+.ellipse {
+  position: absolute;
+  scale: 1.5;
+  z-index: 0;
+  left: -90px;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: rgb(255, 234, 234);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 234, 234, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  display: flex;
+  justify-content: center;
+}
+
+.photo {
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+  height: 917px;
+}
+
+.content {
+  max-width: 1440px;
+  position: relative;
+  width: 100%;
+}
+
+.right-side {
+  position: absolute;
+  right: 100px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 130px;
+}
+
+.title {
+  color: #ff5959;
+  display: flex;
+  flex-direction: column;
+  font-size: 64px;
+  .bold {
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 120.6px;
+    letter-spacing: -2.5%;
+    font-family: "Baloo";
+  }
+}
+
+.scroll {
+  color: #ff5959;
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.social {
+  position: absolute;
+  bottom: 64px;
+  right: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  >div {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    a {
+      width: 30px;
+      height: 30px;
+      transition: all 200ms ease-in-out;
+      &:hover {
+        transform: translateX(-10px);
+      }
+    }
+  }
+  
+}
