@@ -1,0 +1,32 @@
+@import "../../../shared/shared_var.scss";
+
+.button-container {
+  height: 72px;
+}
+
+button {
+  font-family: 'Poppins', sans-serif!important;
+  border: 2px solid $strongRed;
+  padding:15px 30px;
+  border-radius: 10px;
+  font-size: 23px;
+  line-height: 27.6px;
+  font-weight: 500;
+  color: $strongRed;
+  box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0);
+  transition: all 200ms ease-in-out;
+  background: linear-gradient(125deg, 
+    rgba(255,89,89,1) 10%, 
+    rgba(222,0,0,1) 40%, 
+    rgba(222,0,0,1) 48%, 
+    rgba(255,255,255,1) 50%) right;
+  background-size: 250%;
+  cursor: pointer;
+  &:hover {
+    background-position:left;
+    color: white;
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.30);
+    padding: 20px 40px;
+  }
+}

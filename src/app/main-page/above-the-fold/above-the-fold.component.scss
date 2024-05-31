@@ -23,17 +23,21 @@ section {
   justify-content: center;
 }
 
+.content {
+  max-width: $maxWidth;	.content {
+  max-width: 1440px;
+  position: relative;
+  width: 100%;
+}
+  position: relative;
+  width: 100%;
+}
+
 .photo {
   position: absolute;
   bottom: 0;
   left: $sidePadding;
   width: 700px;
-}
-
-.content {
-  max-width: 1440px;
-  position: relative;
-  width: 100%;
 }
 
 .right-side {

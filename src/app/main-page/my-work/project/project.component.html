@@ -1,0 +1,21 @@
+<div class="project">
+  @if (project) {
+  <div class="left">
+    <img src="{{ project.img }}" alt="{{ project.name }}" />
+  </div>
+  <div class="right">
+    <div class="content">
+      <div class="title">{{ project.name }}</div>
+      <div class="tech-stack">
+        @for (item of project.tech; track $index) {
+        <span>{{ item }}</span>
+        @if ($index < project.tech.length - 1) {
+        <span>|</span>
+        } }
+      </div>
+      <div class="description">{{ project.description }}</div>
+    </div>
+    <app-button [buttonText]="'GitHub'" [link]="project.link" (click)="openLink(project.link)"></app-button>
+  </div>
+  }
+</div>

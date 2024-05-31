@@ -36,12 +36,8 @@ section {
 }
 
 .bottom {
-  width: 100%;
-  @include displayFlex(row, flex-end, center);
-  >div {
-    width: 50%;
-    @include displayFlex(row, center, center);
-  }
+  width: 50%;
+  @include displayFlex(row, center, center);
 }
 
 .left {

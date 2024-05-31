@@ -1,0 +1,20 @@
+<section>
+  <div class="ellipse-container">
+    <img src="./assets/icons/ellipse.svg" alt="ellipse" class="ellipse1" />
+    <img src="./assets/icons/ellipse.svg" alt="ellipse" class="ellipse2" />
+  </div>
+  <div class="container">
+    <div class="header">
+      <div class="title">My work</div>
+      <div class="title-description">
+        Feel free to try out my latest web development projects and look into
+        their code.
+      </div>
+    </div>
+    <div class="projects">
+      @for (project of projects; track $index) {
+      <app-project [project]="project"></app-project>
+      }
+    </div>
+  </div>
+</section>

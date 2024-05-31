@@ -1,0 +1,44 @@
+@import "../../../../shared/shared_var.scss";
+
+.project {
+  @include displayFlex(row, center, flex-end);
+  height: 460px;
+}
+
+.left {
+  @include displayFlex(row, center, flex-end);
+
+  > img {
+    width: 86%;
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.15);
+  }
+}
+
+.right {
+  padding-left: 38px;
+  @include displayFlex(column, flex-end, flex-start);
+  gap: 35px;
+  height: 100%;
+  color: $strongRed;
+  .content {
+    @include displayFlex(column, flex-end, flex-start);
+    gap: 15px;
+  }
+  .title {
+    font-family: "Baloo", sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 54px;
+  }
+  .tech-stack {
+    @include displayFlex(row, flex-start, center);
+    gap: 5px;
+    font-size: 23px;
+    line-height: 27.6px;
+  }
+  .description {
+    font-size: 16px;
+    line-height: 19.2px;
+    color: black;
+  }
+}
