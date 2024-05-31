@@ -2,6 +2,11 @@
   <div class="ellipse-container">
     <img src="./assets/icons/ellipse.svg" alt="ellipse" class="ellipse1" />
     <img src="./assets/icons/ellipse.svg" alt="ellipse" class="ellipse2" />
+    <img src="./assets/icons/ellipse.svg" alt="ellipse" class="ellipse3" />
+    <img src="./assets/icons/ellipse.svg" alt="ellipse" class="ellipse4" />
+    <img src="./assets/icons/ellipse.svg" alt="ellipse" class="ellipse5" />
+    <img src="./assets/icons/ellipse.svg" alt="ellipse" class="ellipse6" />
+    <!-- <img src="./assets/icons/ellipse.svg" alt="ellipse" class="ellipse7" /> -->
   </div>
   <div class="container">
     <div class="header">
@@ -13,7 +18,7 @@
     </div>
     <div class="projects">
       @for (project of projects; track $index) {
-      <app-project [project]="project"></app-project>
+      <app-project [project]="project" [rowReverse]="$index % 2 === 1"></app-project>
       }
     </div>
   </div>

@@ -1,10 +1,10 @@
-<div class="project">
+<div class="project" [class.rowReverse]="rowReverse">
   @if (project) {
   <div class="left">
     <img src="{{ project.img }}" alt="{{ project.name }}" />
   </div>
-  <div class="right">
-    <div class="content">
+  <div class="right" [class.alignRight]="rowReverse" [class.paddingLeft]="!rowReverse" [class.paddingRight]="rowReverse">
+    <div class="content" [class.alignRight]="rowReverse">
       <div class="title">{{ project.name }}</div>
       <div class="tech-stack">
         @for (item of project.tech; track $index) {

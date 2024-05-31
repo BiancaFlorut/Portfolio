@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 import { Project } from '../../../models/project.interface';
 import { ButtonComponent } from '../../../shared/button/button.component';
 
@@ -11,6 +11,7 @@ import { ButtonComponent } from '../../../shared/button/button.component';
 })
 export class ProjectComponent {
   @Input() project: Project | undefined;
+  @Input() rowReverse: boolean = false;
 
   openLink(link:string) {
     window.open(link, '_blank');

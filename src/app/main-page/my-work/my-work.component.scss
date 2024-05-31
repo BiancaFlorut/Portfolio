@@ -1,5 +1,15 @@
 @import "../../../shared/shared_var.scss";
 
+@mixin absPosition($top, $right, $bottom, $left, $size) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+  width: $size;
+  height: $size;
+}
+
 section {
   width: 100%;
   @include displayFlex(column, center, center);
@@ -17,21 +27,35 @@ section {
   position: relative;
   width: 100%;
   height: 100%;
+  max-width: $maxWidth;
+  margin-right:-150px ;
   .ellipse1 {
-    position: absolute;
-    width: 108.75px;
-    height: 108.75px;
-    left: 40%;
-    top: 50px;
+    @include absPosition(50px, unset, unset, 40%, 108.75px);
   }
   .ellipse2 {
-    position: absolute;
-    width: 183px;
-    height: 183px; 
-    right: $sidePadding;
-    top: 200px
+    @include absPosition(200px, $sidePadding, unset, unset, 183px);
   }
-
+  .ellipse3 {
+    @include absPosition(577px, unset, unset, unset, 393.32px);
+    transform: translateX(-50%) rotate(81deg) ;
+    z-index: -1;
+  }
+  .ellipse4 {
+    @include absPosition(862px, -127px, unset, unset, 652.16px);
+    transform: rotate(81deg);
+    z-index: -1;
+  }
+  .ellipse5 {
+    @include absPosition(1320px, unset, unset, 100px, 51px);
+  }
+  .ellipse6 {
+    @include absPosition(1751px, unset, unset, 131px, 237.84px);
+    transform: rotate(81deg);
+    z-index: -1;
+  }
+  .ellipse7 {
+    @include absPosition(2357px, 100px, unset, unset, 98px);
+  }
 }
 
 .header {

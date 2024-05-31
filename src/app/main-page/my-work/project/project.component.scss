@@ -3,11 +3,12 @@
 .project {
   @include displayFlex(row, center, flex-end);
   height: 460px;
+  width: 100%;
 }
 
 .left {
   @include displayFlex(row, center, flex-end);
-
+  width: 50%;
   > img {
     width: 86%;
     box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.15);
@@ -15,10 +16,10 @@
 }
 
 .right {
-  padding-left: 38px;
   @include displayFlex(column, flex-end, flex-start);
   gap: 35px;
   height: 100%;
+  width: 50%;
   color: $strongRed;
   .content {
     @include displayFlex(column, flex-end, flex-start);
@@ -41,4 +42,20 @@
     line-height: 19.2px;
     color: black;
   }
+}
+
+.rowReverse {
+  flex-direction: row-reverse;
+}
+
+.alignRight {
+  align-items: flex-end!important;
+}
+
+.paddingLeft {
+  padding-left: 38px;
+}
+
+.paddingRight {
+  padding-right: 38px;
 }
