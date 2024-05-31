@@ -1,16 +1,23 @@
 @import "../../../shared/shared_var.scss";
 
+section {
+  width: 100%;
+  @include displayFlex(column, center, center);
+}
 .container {
   @include displayFlex(column, center, flex-end);
   padding: 0 $sidePadding;
   gap: 13px;
   padding-bottom: 123px;
+  max-width: $maxWidth;
+  box-sizing: border-box;
 }
 
 .ellipse-container {
   padding-top: 64px;
   padding-bottom: 40px;
   width: 100%;
+  max-width: $maxWidth;
   @include displayFlex(row, flex-end, flex-end);
   >div {
     width: 50%;
