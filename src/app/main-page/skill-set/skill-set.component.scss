@@ -11,24 +11,20 @@ section {
     rgba(255, 89, 89, 1) 30%,
     rgba(222, 0, 0, 1) 100%
   );
-  padding: 100px 140px;
   box-sizing: border-box;
   color: white;
 }
 
 .container {
-  max-width: $maxWidth;
   @include displayFlex(column, center, center);
-  padding: 0 $sidePadding;
+  padding: 100px calc($sidePadding + 140px) ;
+  max-width: $maxWidth;
   box-sizing: border-box;
 }
 
-.title {
-  font-family: "Baloo", sans-serif;
-  font-weight: 800;
-  font-size: 96px;
-  line-height: 96px;
-  letter-spacing: 1px;
+.header-title {
+  color: white;
+  text-align: center;
 }
 
 .skills {
@@ -41,7 +37,8 @@ section {
     @include displayFlex(column, flex-end, center);
     gap: 10px;
     height: 150px;
-    transition: all 200ms ease-in-cubic-bezier(0,0,0.2,1);
+    width: 89px;
+    transition: all 200ms cubic-bezier(0,0,0.2,1);
 
     &:hover { 
       gap: 21px;

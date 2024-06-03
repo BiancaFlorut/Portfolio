@@ -1,0 +1,14 @@
+@import "../../../shared/shared_var.scss";
+
+section {
+  width: 100%;
+  @include displayFlex(column, center, center);
+}
+
+.container {
+  @include displayFlex(column, center, center);
+  padding: 70px $sidePadding;
+  max-width: $maxWidth;
+  box-sizing: border-box;
+  width: 100%;
+}

@@ -8,9 +8,12 @@
 
 .left {
   @include displayFlex(row, center, flex-end);
-  width: 50%;
-  > img {
-    width: 86%;
+  width: 63%;
+  height: 100%;
+  >img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
     box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.15);
   }
 }
@@ -19,7 +22,7 @@
   @include displayFlex(column, flex-end, flex-start);
   gap: 35px;
   height: 100%;
-  width: 50%;
+  width: 37%;
   color: $strongRed;
   .content {
     @include displayFlex(column, flex-end, flex-start);
@@ -53,9 +56,9 @@
 }
 
 .paddingLeft {
-  padding-left: 38px;
+  padding-left: 88px;
 }
 
 .paddingRight {
-  padding-right: 38px;
+  padding-right: 88px;
 }
