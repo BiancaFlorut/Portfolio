@@ -17,7 +17,7 @@ section {
 
 .container {
   @include displayFlex(column, center, center);
-  padding: 111px $sidePadding;
+  padding: 111px $sidePadding 234px $sidePadding;
   max-width: $maxWidth;
   box-sizing: border-box;
   width: 100%;

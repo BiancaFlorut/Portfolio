@@ -1,17 +1,59 @@
 <section>
+  <!-- <div class="ellipse-container">
+  <img src="./assets/icons/ellipse.svg" alt="ellipse" class="ellipse6" />
+</div> -->
+
   <div class="container">
     <div class="header">
-      <div class="header-title">Contact</div>
-      <div class="title-description">
-        <div>Got a problem to solve?</div>
-        <span
-          >Contact me through this form, I am interested in hearing from you,
-          knowing your ideas and contributing to your projects with my
-          work.</span
-        >
-        <span>Need a Frontend developer? Contact me!</span>
-      </div>
+      <div class="header-title" id="contact">Contact</div>
     </div>
-    <div class="form-container"></div>
+    <div class="form">
+      <div class="description">
+        <div class="description-title">Got a problem to solve?</div>
+        <span class="description-text">
+          Contact me through this form, I am interested in hearing from you,
+          knowing your ideas and contributing to your projects with my work.
+        </span>
+        <div>
+          <span>Need a Frontend developer?</span>
+          <span>Contact me!</span>
+        </div>
+      </div>
+      <form class="form-container" (ngSubmit)="onSubmit()">
+        <input
+          [(ngModel)]="formData.name"
+          type="text"
+          placeholder="Your Name"
+          (focus)="onFocus(this)"
+          name="name"
+        />
+        <input
+          [(ngModel)]="formData.email"
+          type="email"
+          placeholder="Your Email"
+          name="email"
+        />
+        <textarea
+          [(ngModel)]="formData.message"
+          name=""
+          id=""
+          placeholder="Your Message"
+          name="message"
+        ></textarea>
+        <div class="checkbox" (click)="toggleCheckbox()">
+          <div class="checkbox_icon" >
+            <img src="./assets/icons/{{checkbox}}.svg" alt="">
+          </div>
+          <span>
+            I've read the <a href="/privacy">privacy policy</a> and agree to the
+            processing of my data as outlined.
+          </span>
+        </div>
+        <app-button
+          [buttonText]="'Say hello ;)'"
+          [disabled]="true"
+        ></app-button>
+      </form>
+    </div>
   </div>
 </section>

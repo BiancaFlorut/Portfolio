@@ -1,9 +1,11 @@
-<div class="project" [class.rowReverse]="rowReverse">
+<div class="project" [class.rowReverse]="rowReverse" >
   @if (project) {
   <div class="left">
-    <img src="{{ project.img }}" alt="{{ project.name }}" />
+    <div class="img-container" [class.jc_start]="!rowReverse" [class.jc_end]="rowReverse">
+      <img src="{{ project.img }}" alt="{{ project.name }}" />
+    </div>
   </div>
-  <div class="right" [class.alignRight]="rowReverse" [class.paddingLeft]="!rowReverse" [class.paddingRight]="rowReverse">
+  <div class="right" [class.alignRight]="rowReverse" [class.padding_left]="!rowReverse" [class.padding_right]="rowReverse">
     <div class="content" [class.alignRight]="rowReverse">
       <div class="title">{{ project.name }}</div>
       <div class="tech-stack">

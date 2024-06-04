@@ -1,20 +1,29 @@
 @import "../../../../shared/shared_var.scss";
 
 .project {
-  @include displayFlex(row, center, flex-end);
+  @include displayFlex(row, flex-start, flex-end);
   height: 460px;
   width: 100%;
 }
 
 .left {
-  @include displayFlex(row, center, flex-end);
-  width: 63%;
+  @include displayFlex(row, flex-start, flex-end);
+  width: 50%;
   height: 100%;
-  >img {
+  .img-container {
     width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.15);
+    height: 100%;
+    @include displayFlex(row, center, flex-end);
+    >img {
+      max-height: 85%;
+      object-fit: contain;
+      box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.15);
+      transition: all 0.1s ease-in;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.15);
+      }
+    }
   }
 }
 
@@ -22,7 +31,7 @@
   @include displayFlex(column, flex-end, flex-start);
   gap: 35px;
   height: 100%;
-  width: 37%;
+  max-width: 50%;
   color: $strongRed;
   .content {
     @include displayFlex(column, flex-end, flex-start);
@@ -55,10 +64,18 @@
   align-items: flex-end!important;
 }
 
-.paddingLeft {
+.jc_start {
+  justify-content: flex-start!important;
+}
+
+.jc_end {
+  justify-content: flex-end!important;
+}
+
+.padding_left {
   padding-left: 88px;
 }
 
-.paddingRight {
+.padding_right {
   padding-right: 88px;
 }

@@ -3,12 +3,131 @@
 section {
   width: 100%;
   @include displayFlex(column, center, center);
+  background: rgb(255, 234, 234);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 234, 234, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 .container {
   @include displayFlex(column, center, center);
-  padding: 70px $sidePadding;
+  padding:  0 $sidePadding 70px $sidePadding;
   max-width: $maxWidth;
-  box-sizing: border-box;
   width: 100%;
+  box-sizing: border-box;
+  gap: 139px;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+  .header-title {
+    position: absolute;
+    transform: translateY(-50%);
+  }
+}
+
+.form {
+  @include displayFlex(row, center, flex-start);
+  gap: 150px;
+  width: 100%;
+}
+
+.description {
+  @include displayFlex(column, flex-start, flex-start);
+  gap: 25px;
+  width: 50%;
+  .description-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    color: $strongRed;
+    padding-bottom: 10px;
+  }
+  span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+  }
+  >div {
+    color: $strongRed;
+    >span:last-child {
+      font-weight: 700;
+      padding-left: 4px;
+    }
+  }
+}
+
+.form-container {
+  @include displayFlex(column, flex-start, flex-start);
+  gap: 10px;
+  width: 50%;
+}
+
+input,
+textarea {
+  height: 50px;
+  border: none;
+  outline: 1px solid #ff5959;
+  border-radius: 10px;
+  width: 100%;
+  padding: 0 25px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  box-sizing: border-box;
+  &:hover {
+    outline: #ff5959 2px solid;
+  }
+}
+
+textarea {
+  height: 200px;
+  padding: 15px 25px;
+  resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: black;
+}
+
+::-webkit-resizer {
+  background-image: url("../../../assets/icons/Frame.svg");
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+}
+
+.checkbox {
+  @include displayFlex(row, center, flex-start);
+  gap: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 16.8px;
+  font-weight: 400;
+  span {
+    padding: 5px 0;
+    a {
+      text-decoration: none;
+      color: $strongRed;
+      margin-right: 6px;
+    }
+  }
+  &:hover .checkbox_icon {
+    background: $redShadow;
+    border-radius: 38px;
+  }
+  &:hover span a {
+    color: $highlightRed;
+    font-weight: 700;
+    margin-right: 0;
+    text-decoration: underline;
+  }
+  .checkbox_icon {
+    @include displayFlex(row, center, center);
+    cursor: pointer;
+  }
 }

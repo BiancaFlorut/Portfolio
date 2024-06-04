@@ -46,7 +46,7 @@ section {
     line-height: 118px;
     font-size: 118px;
     letter-spacing: 1px;
-    color: $headingColor;
+    color: $strongRed;
     font-weight: 800;
   }
   @include displayFlex(column, center, center);

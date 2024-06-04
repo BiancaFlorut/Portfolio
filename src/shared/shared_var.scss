@@ -1,7 +1,9 @@
 $sidePadding: 100px;
-$headingColor: #ff5959;
 $strongRed: #FF5959;
 $maxWidth: 1440px;
+$gray : #BBBBBB;
+$redShadow: #FFD6D6;
+$highlightRed: #DE0000;
 
 @mixin displayFlex($fl_d: row, $jc: center, $ai: center) {
   display: flex;
@@ -9,3 +11,4 @@ $maxWidth: 1440px;
   justify-content: $jc;
   align-items: $ai;
 }
+
