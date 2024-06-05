@@ -13,3 +13,12 @@ $errorRed: #E61C40;
   align-items: $ai;
 }
 
+@mixin absPosition($top, $right, $bottom, $left, $size) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+  width: $size;
+  height: $size;
+}

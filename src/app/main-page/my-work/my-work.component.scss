@@ -1,15 +1,5 @@
 @import "../../../shared/shared_var.scss";
 
-@mixin absPosition($top, $right, $bottom, $left, $size) {
-  position: absolute;
-  top: $top;
-  left: $left;
-  right: $right;
-  bottom: $bottom;
-  width: $size;
-  height: $size;
-}
-
 section {
   width: 100%;
   @include displayFlex(column, center, center);
