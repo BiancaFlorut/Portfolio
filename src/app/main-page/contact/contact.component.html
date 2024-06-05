@@ -19,40 +19,127 @@
           <span>Contact me!</span>
         </div>
       </div>
-      <form class="form-container" (ngSubmit)="onSubmit()">
-        <input
-          [(ngModel)]="formData.name"
-          type="text"
-          placeholder="Your Name"
-          (focus)="onFocus(this)"
-          name="name"
-        />
-        <input
-          [(ngModel)]="formData.email"
-          type="email"
-          placeholder="Your Email"
-          name="email"
-        />
-        <textarea
-          [(ngModel)]="formData.message"
-          name=""
-          id=""
-          placeholder="Your Message"
-          name="message"
-        ></textarea>
-        <div class="checkbox" (click)="toggleCheckbox()">
-          <div class="checkbox_icon" >
-            <img src="./assets/icons/{{checkbox}}.svg" alt="">
+      <form
+        class="form-container"
+        (ngSubmit)="onSubmit(contactForm)"
+        #contactForm="ngForm"
+      >
+        <div>
+          <div class="label">
+            @if (nameLabelOnFocus) {
+            <span>Your name</span>
+            }
           </div>
-          <span>
-            I've read the <a href="/privacy">privacy policy</a> and agree to the
-            processing of my data as outlined.
-          </span>
+          <div class="error">
+            <div class="error-icon">
+              @if (!name.valid && name.touched) {
+              <div><img src="./assets/icons/error.svg" alt="" /></div>
+              } @else if (name.valid && name.touched) {
+              <div><img src="./assets/icons/accepted.svg" alt="" /></div>
+              }
+            </div>
+          </div>
+          <input
+            [(ngModel)]="formData.name"
+            type="text"
+            placeholder="{{ namePlaceholder }}"
+            (focus)="onFocus('name')"
+            name="name"
+            #name="ngModel"
+            required
+          />
+          <div class="error text">
+            @if (!name.valid && name.touched) {
+            <span>Your name is required</span>
+            }
+          </div>
         </div>
-        <app-button
-          [buttonText]="'Say hello ;)'"
-          [disabled]="true"
-        ></app-button>
+        <div>
+          <div class="label">
+            @if (emailLabelOnFocus) {
+            <span>Your email</span>
+            }
+          </div>
+          <div class="error">
+            <div class="error-icon">
+              @if (!email.valid && email.touched) {
+              <div><img src="./assets/icons/error.svg" alt="" /></div>
+              } @else if (email.valid && email.touched) {
+              <div><img src="./assets/icons/accepted.svg" alt="" /></div>
+              }
+            </div>
+          </div>
+          <input
+            [(ngModel)]="formData.email"
+            type="email"
+            placeholder="{{ emailPlaceholder }}"
+            name="email"
+            (focus)="onFocus('email')"
+            required
+            #email="ngModel"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+          />
+          <div class="error text">
+            @if (!email.valid && email.touched) {
+            <span>Your email is required</span>
+            }
+          </div>
+        </div>
+        <div>
+          <div class="label">
+            @if (messageLabelOnFocus) {
+            <span>Your message</span>
+            }
+          </div>
+          <div class="error">
+            <div class="error-icon">
+              @if (!message.valid && message.touched) {
+              <div><img src="./assets/icons/error.svg" alt="" /></div>
+              } @else if (message.valid && message.touched) {
+              <div><img src="./assets/icons/accepted.svg" alt="" /></div>
+              }
+            </div>
+          </div>
+          <textarea
+            [(ngModel)]="formData.message"
+            name=""
+            id=""
+            placeholder="{{ messagePlaceholder }}"
+            name="message"
+            (focus)="onFocus('message')"
+            required
+            #message="ngModel"
+            minlength="10"
+          ></textarea>
+          <div class="error text">
+            @if (!message.valid && message.touched) {
+            <span>Your message is empty</span>
+            }
+          </div>
+          <div class="checkbox" (click)="toggleCheckbox()">
+            <div class="checkbox_container">
+              <div class="checkbox_icon">
+                <img src="./assets/icons/{{ checkbox }}.svg" alt="" />
+              </div>
+              <span>
+                I've read the <a href="/privacy">privacy policy</a> and agree to
+                the processing of my data as outlined.
+              </span>
+            </div>
+            <div class="error">
+              @if (!privacyPolicyChecked && (email.valid || name.valid ||
+              message.valid)) {
+              <span>Please accept the privacy policy.</span>
+              }
+            </div>
+          </div>
+          <div class="button-container">
+            <app-button
+              [buttonText]="'Say hello ;)'"
+              [disabled]="!contactForm.valid || !privacyPolicyChecked"
+            ></app-button>
+          </div>
+        </div>
       </form>
     </div>
   </div>

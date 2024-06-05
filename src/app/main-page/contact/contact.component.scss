@@ -13,11 +13,12 @@ section {
 
 .container {
   @include displayFlex(column, center, center);
-  padding:  0 $sidePadding 70px $sidePadding;
+  padding: 0 $sidePadding 70px $sidePadding;
   max-width: $maxWidth;
   width: 100%;
   box-sizing: border-box;
   gap: 139px;
+  transition: all 200ms ease-in-out;
 }
 
 .header {
@@ -51,9 +52,9 @@ section {
     font-weight: 400;
     line-height: 19.2px;
   }
-  >div {
+  > div {
     color: $strongRed;
-    >span:last-child {
+    > span:last-child {
       font-weight: 700;
       padding-left: 4px;
     }
@@ -62,8 +63,31 @@ section {
 
 .form-container {
   @include displayFlex(column, flex-start, flex-start);
-  gap: 10px;
+  gap: 22px;
   width: 50%;
+  > div {
+    width: 100%;
+  }
+  .label {
+    width: 100%;
+    padding: 0 25px;
+    position: relative;
+    span {
+      position: absolute;
+
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 40%,
+        rgba(255, 255, 255, 1) 40%,
+        rgba(255, 255, 255, 1) 100%
+      );
+      transform: translateY(-50%);
+      font-size: 16px;
+      line-height: 19.2px;
+    }
+  }
 }
 
 input,
@@ -102,14 +126,13 @@ textarea::placeholder {
 }
 
 .checkbox {
-  @include displayFlex(row, center, flex-start);
+  @include displayFlex(column, center, flex-start);
   gap: 8px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 16.8px;
   font-weight: 400;
   span {
-    padding: 5px 0;
     a {
       text-decoration: none;
       color: $strongRed;
@@ -130,4 +153,37 @@ textarea::placeholder {
     @include displayFlex(row, center, center);
     cursor: pointer;
   }
+  .checkbox_container {
+    @include displayFlex(row, center, flex-start);
+    gap: 8px;
+    padding-top: 16px;
+  }
+}
+
+.error {
+  color: $errorRed;
+  font-size: 14px;
+  line-height: 16.8px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  padding-right: 25px;
+  .error-icon {
+    position: relative;
+    @include displayFlex(row, flex-end, center);
+    >div{
+      position: absolute;
+      height: 50px;
+      @include displayFlex(row, center, center);
+      transform: translateY(50%);
+    }
+  }
+}
+
+.text {
+  padding-top: 10px;
+}
+
+.button-container {
+  @include displayFlex(row, center, center);
+  padding-top: 12px;
 }

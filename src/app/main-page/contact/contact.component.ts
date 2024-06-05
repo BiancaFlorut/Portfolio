@@ -1,6 +1,7 @@
-import { Component, NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { Component, NgModule, inject } from '@angular/core';
+import { FormsModule, NgForm } from '@angular/forms';
 import { ButtonComponent } from '../../shared/button/button.component';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
@@ -18,16 +19,80 @@ export class ContactComponent {
   }; 
   privacyPolicyChecked = false;
   checkbox = 'unchecked';
+  nameLabelOnFocus = false;
+  emailLabelOnFocus = false;
+  messageLabelOnFocus = false;
 
-  onFocus(input: any) {
-    input.value += 'hello';
-    console.log(input.value);
-    
+  namePlaceholder = 'Your name';
+  emailPlaceholder = 'Your email';
+  messagePlaceholder = 'Your message';
+
+  nameError = false;
+  mailTest = false;
+
+  http = inject(HttpClient);
+
+  post = {
+    endPoint: 'https://biancaflorut.github.io//sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
+  };
+
+  onSubmit(ngForm: NgForm) {
+    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+      this.http.post(this.post.endPoint, this.post.body(this.formData))
+        .subscribe({
+          next: (response) => {
+
+            ngForm.resetForm();
+          },
+          error: (error) => {
+            console.error(error);
+          },
+          complete: () => console.info('send post complete'),
+        });
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+
+      ngForm.resetForm();
+    }
   }
 
-  onSubmit() {
-    console.log('submitted');
+  onFocus(input: string) {
+    switch (input) {
+      case 'name': {
+        this.nameLabelOnFocus = true;
+        this.namePlaceholder = '';
+        break;
+      }
+      case 'email': {
+        this.emailLabelOnFocus = true;
+        this.emailPlaceholder = '';
+        break;
+      }
+      case 'message': {
+        this.messageLabelOnFocus = true;
+        this.messagePlaceholder = '';
+        break;
+      }
+      default: {
+        this.nameLabelOnFocus = false;
+        this.emailLabelOnFocus = false;
+        this.messageLabelOnFocus = false;
+        break;
+      }
+    }
   }
+
+  // onSubmit(form: NgForm) {
+  //   if (form.valid && this.privacyPolicyChecked && form.submitted) {
+  //     console.log('submitted');
+  //   }
+  // }
 
   toggleCheckbox() {
     if (this.privacyPolicyChecked) {

@@ -1,5 +1,4 @@
 @import "./shared/shared_var.scss";
-@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
 
 @font-face {
   font-family: "Montserrat";
@@ -20,6 +19,7 @@
 
 body {
   scroll-behavior: smooth;
+  transition: all 200ms ease-in-out;
 }
 
 app-root {
