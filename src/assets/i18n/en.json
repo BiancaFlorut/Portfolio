@@ -14,8 +14,7 @@
     "button": "Send a message"
   },
   "aboveTheFold": {
-    "title": "Hi, I'm Bianca",
-    "description": "<span>Hi, I'm Bianca</span><span class='bold'>Software</span><span class='bold'>Engineer</span>",
+    "title": "Hi, I'm Bianca,",
     "description1": "Software",
     "description2": "Engineer",
     "scroll": "Scroll"
@@ -29,7 +28,15 @@
     "labelName": "Your name",
     "labelEmail": "Your email",
     "labelMessage": "Your message",
-    "Your name": "Your name",
-    "": ""
+    "errorName": "Your name is required",
+    "errorEmail": "Your email is required",
+    "errorMessage": "Your message is empty",
+    "privacyPolicy": {
+      "first": "I've read the ",
+      "link": "privacy policy",
+      "last": "and agree to the processing of my data as outlined."
+    },
+    "checkboxError": "Please accept the privacy policy.",
+    "button": "Say hello ;)"
   }
 }

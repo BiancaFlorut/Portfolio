@@ -14,7 +14,7 @@
     "button": "Sende eine Nachricht"
   },
   "aboveTheFold": {
-    "title": "Hallo, ich bin Bianca",
+    "title": "Hallo, ich bin Bianca,",
     "description1": "Software",
     "description2": "Entwicklerin",
     "scroll": "Scrollen"
@@ -25,8 +25,18 @@
     "descriptionText": "Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
     "recency1": "Brauchen Sie einen Software Entwickler?",
     "recency2": "Kontaktieren Sie mich!",
-    "labelName": "Dein Name",
-    "labelEmail": "Deine Email",
-    "labelMessage": "Deine Nachricht"
+    "labelName": "Ihr Name",
+    "labelEmail": "Ihre E-Mail",
+    "labelMessage": "Ihre Nachricht",
+    "errorName": "Ihr Name ist erforderlich",
+    "errorEmail": "Ihre E-mail ist erforderlich",
+    "errorMessage": "Ihre Nachricht ist leer",
+    "privacyPolicy": {
+      "first": "Ich habe die ",
+      "link": "Datenschutzbestimmungen",
+      "last": " gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu."
+    },
+    "checkboxError": "Bitte akzeptieren Sie die Datenschutzbestimmungen.",
+    "button": "Hallo sagen ;)"
   }
 }

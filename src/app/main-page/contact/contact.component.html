@@ -50,14 +50,14 @@
           />
           <div class="error text">
             @if (!name.valid && name.touched) {
-            <span>Your name is required</span>
+            <span>{{ 'contact.errorName' | translate }}</span>
             }
           </div>
         </div>
         <div>
           <div class="label">
             @if (emailLabelOnFocus) {
-            <span>Your email</span>
+            <span>{{ 'contact.labelEmail' | translate }}</span>
             }
           </div>
           <div class="error">
@@ -81,14 +81,14 @@
           />
           <div class="error text">
             @if (!email.valid && email.touched) {
-            <span>Your email is required</span>
+            <span>{{ 'contact.errorEmail' | translate }}</span>
             }
           </div>
         </div>
         <div>
           <div class="label">
             @if (messageLabelOnFocus) {
-            <span>Your message</span>
+            <span>{{ 'contact.labelMessage' | translate }}</span>
             }
           </div>
           <div class="error">
@@ -113,7 +113,7 @@
           ></textarea>
           <div class="error text">
             @if (!message.valid && message.touched) {
-            <span>Your message is empty</span>
+            <span>{{ 'contact.errorMessage' | translate }}</span>
             }
           </div>
           <div class="checkbox" (click)="toggleCheckbox()">
@@ -121,21 +121,22 @@
               <div class="checkbox_icon">
                 <img src="./assets/icons/{{ checkbox }}.svg" alt="" />
               </div>
-              <span>
-                I've read the <a href="/privacy">privacy policy</a> and agree to
-                the processing of my data as outlined.
-              </span>
+              <div>
+                <span> {{ 'contact.privacyPolicy.first' | translate }}</span>
+                <a id='privacyPolicy' href='/privacy'>{{ 'contact.privacyPolicy.link' | translate }}</a>
+                <span>{{ 'contact.privacyPolicy.last' | translate }}</span>
+              </div>
             </div>
             <div class="error">
               @if (!privacyPolicyChecked && (email.valid || name.valid ||
               message.valid)) {
-              <span>Please accept the privacy policy.</span>
+              <span>{{ 'contact.checkboxError' | translate }}</span>
               }
             </div>
           </div>
           <div class="button-container">
             <app-button
-              [buttonText]="'Say hello ;)'"
+              [buttonText]="'contact.button' | translate"
               [disabled]="!contactForm.valid || !privacyPolicyChecked"
             ></app-button>
           </div>

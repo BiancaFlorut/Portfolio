@@ -9,13 +9,12 @@
   },
   "aboutMe": {
     "title": "Hai să lucrăm împreună",
-    "description": "Sunt un ingineră de software stabilită în parte de est al Brandenburgului, Germania. Mă bucur să ajut designerii și companiile să își transpună ideile în viața reală. Aștept cu nerăbdare să îmi continui cariera de inginer cu un loc de muncă într-o poziție de inginer software junior.",
+    "description": "Sunt un inginer de software stabilită în parte de est în Brandenburg, Germania. Mă bucur să ajut designerii și companiile să își transpună ideile în viața reală. Aștept cu nerăbdare să îmi continui cariera de inginer cu un loc de muncă într-o poziție de inginer software junior.",
     "recency": "Dacă credeți că m-aș potrivi pentru proiectele dumneavoastră, contactați-mă!",
     "button": "Trimite un mesaj"
   },
   "aboveTheFold": {
-    "title": "Salut, sunt Bianca",
-    "description": "<span>Salut, sunt Bianca</span><span class='bold'>Inginer</span><span class='bold'>Software</span>",
+    "title": "Salut, sunt Bianca,",
     "description1": "Inginer",
     "description2": "software",
     "scroll": "Derulați"
@@ -26,8 +25,18 @@
     "descriptionText": "Contactați-mă prin acest formular, sunt interesată să aud de voi, să vă cunosc ideile și să contribui la proiectele voastre prin munca mea.",
     "recency1": "Aveți nevoie de un inginer software?",
     "recency2": "Contactați-mă!",
-    "labelName": "Numele tău",
+    "labelName": "Numele dumneavoastră",
     "labelEmail": "Adresa de e-mail",
-    "labelMessage": "Mesajul tău"
+    "labelMessage": "Mesajul dumneavoastră",
+    "errorName": "Numele dumneavoastră este necesar",
+    "errorEmail": "E-mailul dumneavoastră este necesar",
+    "errorMessage": "Mesajul dumneavoastră este gol",
+    "privacyPolicy": {
+      "first": "Am citit ",
+      "link": "politica de confidențialitate",
+      "last": " și sunt de acord cu prelucrarea datelor mele așa cum sunt prezentate."
+    },
+    "checkboxError": "Vă rugăm să acceptați politica de confidențialitate.",
+    "button": "Salută-mă ;)"
   }
 }

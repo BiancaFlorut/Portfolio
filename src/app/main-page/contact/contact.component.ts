@@ -2,7 +2,7 @@ import { Component, NgModule, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { ButtonComponent } from '../../shared/button/button.component';
 import { HttpClient } from '@angular/common/http';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { LangChangeEvent, TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
@@ -17,7 +17,7 @@ export class ContactComponent {
     name: '',
     email: '',
     message: ''
-  }; 
+  };
   privacyPolicyChecked = false;
   checkbox = 'unchecked';
   nameLabelOnFocus = false;
@@ -45,7 +45,13 @@ export class ContactComponent {
   };
 
   constructor(private translate: TranslateService) {
-    this.namePlaceholder = this.translate.instant("contact.labelName");
+    this.changePlaceholders();
+  }
+
+  ngOnInit() {
+    this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.changePlaceholders();
+    });
   }
 
   onSubmit(ngForm: NgForm) {
@@ -91,6 +97,21 @@ export class ContactComponent {
         break;
       }
     }
+  }
+
+  changePlaceholders() {
+    if (this.namePlaceholder != '')
+    this.translate.get("contact.labelName").subscribe((res: string) => {
+      this.namePlaceholder = res;
+    });
+    if (this.emailPlaceholder != '')
+    this.translate.get("contact.labelEmail").subscribe((res: string) => {
+      this.emailPlaceholder = res;
+    });
+    if (this.messagePlaceholder != '')
+    this.translate.get("contact.labelMessage").subscribe((res: string) => {
+      this.messagePlaceholder = res;
+    });
   }
 
   toggleCheckbox() {

@@ -177,21 +177,19 @@ textarea::placeholder {
   font-size: 14px;
   line-height: 16.8px;
   font-weight: 400;
-  span {
-    a {
-      text-decoration: none;
-      color: $strongRed;
-      margin-right: 6px;
-    }
+  #privacyPolicy {
+    text-decoration: none;
+    color: $strongRed;
+    margin-right: 10px;
   }
   &:hover .checkbox_icon {
     background: $redShadow;
     border-radius: 38px;
   }
-  &:hover span a {
+  &:hover #privacyPolicy {
     color: $highlightRed;
     font-weight: 700;
-    margin-right: 0;
+    margin-right: 4px;
     text-decoration: underline;
   }
   .checkbox_icon {
@@ -202,11 +200,13 @@ textarea::placeholder {
     @include displayFlex(row, center, flex-start);
     gap: 8px;
     padding-top: 16px;
-    >span {
+    > span {
       padding-top: 5px;
     }
   }
 }
+
+
 
 .error {
   color: $errorRed;
