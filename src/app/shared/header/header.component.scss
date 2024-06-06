@@ -22,16 +22,6 @@ header{
 }
 
 div {
-  a {
-    color: #FF5959;
-    font-size: 23px;
-    text-decoration: none;
-    transition: all 200ms ease-in-out;
-    &:hover {
-      cursor: pointer;
-      font-weight: 700;
-    }
-  }
   >div{
     width: 150px;
     display: flex;
@@ -39,4 +29,15 @@ div {
   }
   display: flex;
   gap: 18px;
+}
+
+.link {
+  color: #FF5959;
+  font-size: 23px;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+  &:hover {
+    cursor: pointer;
+    font-weight: 700;
+  }
 }
