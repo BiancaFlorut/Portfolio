@@ -12,5 +12,12 @@
     "description": "Sunt un ingineră de software stabilită în parte de est al Brandenburgului, Germania. Mă bucur să ajut designerii și companiile să își transpună ideile în viața reală. Aștept cu nerăbdare să îmi continui cariera de inginer cu un loc de muncă într-o poziție de inginer software junior.",
     "recency": "Dacă credeți că m-aș potrivi pentru proiectele dumneavoastră, contactați-mă!",
     "button": "Trimite un mesaj"
+  },
+  "aboveTheFold": {
+    "title": "Salut, sunt Bianca",
+    "description": "<span>Salut, sunt Bianca</span><span class='bold'>Inginer</span><span class='bold'>Software</span>",
+    "description1": "Inginer",
+    "description2": "software",
+    "scroll": "Derulați"
   }
 }

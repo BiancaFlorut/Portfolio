@@ -12,5 +12,12 @@
     "description": "I am a software engineer based in East Brandenburg, Germany. I enjoy helping designers and companies bring their ideas into real life. I am looking forward to continuing my Engineer career with a job in a junior software engineering position.",
     "recency": "If you think I’d be a good match for your projects, contact me!",
     "button": "Send a message"
+  },
+  "aboveTheFold": {
+    "title": "Hi, I'm Bianca",
+    "description": "<span>Hi, I'm Bianca</span><span class='bold'>Software</span><span class='bold'>Engineer</span>",
+    "description1": "Software",
+    "description2": "Engineer",
+    "scroll": "Scroll"
   }
 }

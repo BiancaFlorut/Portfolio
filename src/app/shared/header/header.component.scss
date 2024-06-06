@@ -23,7 +23,7 @@ header{
 
 div {
   >div{
-    width: 150px;
+    width: 180px;
     display: flex;
     justify-content: center;
   }
@@ -35,6 +35,8 @@ div {
   color: #FF5959;
   font-size: 23px;
   text-decoration: none;
+  white-space: nowrap;
+  white-space: pre;
   transition: all 200ms ease-in-out;
   &:hover {
     cursor: pointer;

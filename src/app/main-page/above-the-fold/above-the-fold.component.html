@@ -4,19 +4,38 @@
     <img class="photo" src="./assets/imgs/photo.png" alt="photo" />
     <div class="right-side">
       <div class="title">
-        <span>Hello! I am Bianca,</span>
-        <span class="bold">Software </span>
-        <span class="bold">Engineer</span>
+        <span id="greeting" [ngClass]="getLangStyleClass()">{{
+          "aboveTheFold.title" | translate
+        }}</span>
+        <span class="bold" id="description1" [ngClass]="getLangStyleClass()">{{
+          "aboveTheFold.description1" | translate
+        }}</span>
+
+        <span
+          class="bold"
+          id="description2" [ngClass]="getLangStyleClass()"
+          >{{ "aboveTheFold.description2" | translate }}</span
+        >
       </div>
       <div class="scroll">
-        <span>Scroll</span>
+        <span>{{ "aboveTheFold.scroll" | translate }}</span>
         <img src="./assets/icons/vertical_vector.svg" alt="" />
       </div>
     </div>
     <div class="social">
-      <div><a href="https://github.com/BiancaFlorut/" target="_blank"><img src="./assets/icons/GitHub.svg" alt="GitHub"></a></div>
-      <div><a href="#contact"><img src="./assets/icons/mail.svg" alt="Mail"></a></div>
-      <div><a href="https://linkedin.com/in/bianca-florut" target="_blank"><img src="./assets/icons/LinkedIn.svg" alt="LinkedIn"></a></div>
+      <div>
+        <a href="https://github.com/BiancaFlorut/" target="_blank"
+          ><img src="./assets/icons/GitHub.svg" alt="GitHub"
+        /></a>
+      </div>
+      <div>
+        <a href="#contact"><img src="./assets/icons/mail.svg" alt="Mail" /></a>
+      </div>
+      <div>
+        <a href="https://linkedin.com/in/bianca-florut" target="_blank"
+          ><img src="./assets/icons/LinkedIn.svg" alt="LinkedIn"
+        /></a>
+      </div>
     </div>
   </div>
 </section>

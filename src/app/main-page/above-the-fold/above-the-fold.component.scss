@@ -74,7 +74,41 @@ section {
     font-family: "Baloo";
     text-transform: uppercase;
   }
+
+  #greeting.ro {
+    font-size: 56px;
+  }
+
+  #greeting.en {
+    letter-spacing: 12px;
+  }
+
+  #greeting.de {
+    letter-spacing: -4px;
+  }
+
+  #description1.ro {
+    letter-spacing: 10px;
+  }
+
+  #description1.de {
+    letter-spacing: 0;
+    font-size: 114px;
+  }
+  #description2.ro {
+    letter-spacing: -4px;
+    font-size: 108px;
+  }
+
+  #description2.de {
+    letter-spacing: -4px;
+    font-size: 90px;
+  }
+
+
 }
+
+
 
 .scroll {
   color: #ff5959;
