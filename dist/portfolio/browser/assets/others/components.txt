@@ -1,0 +1,20 @@
+components
+  shared
+    header
+    footer
+  mainPage
+    menu
+    hero
+    about me
+    skill set
+    my work
+     join
+     sharkie
+     pokedex
+    contact
+  impress
+  
+
+credits
+
+<a href="https://www.flaticon.com/free-icons/java" title="java icons">Java icons created by Freepik - Flaticon</a>

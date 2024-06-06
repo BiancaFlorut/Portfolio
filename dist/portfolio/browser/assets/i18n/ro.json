@@ -1,0 +1,33 @@
+{
+  "header": {
+    "About me": "Despre mine",
+    "Skill Set": "Calificări",
+    "My Projects": "Proiectele mele"
+  },
+  "footer": {
+    "Imprint": "Imprima"
+  },
+  "aboutMe": {
+    "title": "Hai să lucrăm împreună",
+    "description": "Sunt un ingineră de software stabilită în parte de est al Brandenburgului, Germania. Mă bucur să ajut designerii și companiile să își transpună ideile în viața reală. Aștept cu nerăbdare să îmi continui cariera de inginer cu un loc de muncă într-o poziție de inginer software junior.",
+    "recency": "Dacă credeți că m-aș potrivi pentru proiectele dumneavoastră, contactați-mă!",
+    "button": "Trimite un mesaj"
+  },
+  "aboveTheFold": {
+    "title": "Salut, sunt Bianca",
+    "description": "<span>Salut, sunt Bianca</span><span class='bold'>Inginer</span><span class='bold'>Software</span>",
+    "description1": "Inginer",
+    "description2": "software",
+    "scroll": "Derulați"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Ai o problemă de rezolvat?",
+    "descriptionText": "Contactați-mă prin acest formular, sunt interesată să aud de voi, să vă cunosc ideile și să contribui la proiectele voastre prin munca mea.",
+    "recency1": "Aveți nevoie de un inginer software?",
+    "recency2": "Contactați-mă!",
+    "labelName": "Numele tău",
+    "labelEmail": "Adresa de e-mail",
+    "labelMessage": "Mesajul tău"
+  }
+}

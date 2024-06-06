@@ -1,0 +1,35 @@
+{
+  "header": {
+    "About me": "About me",
+    "Skill Set": "Skill set",
+    "My Projects": "My projects"
+  },
+  "footer": {
+    "Imprint": "Imprint"
+  },
+  "aboutMe": {
+    "title": "Let's work together",
+    "description": "I am a software engineer based in East Brandenburg, Germany. I enjoy helping designers and companies bring their ideas into real life. I am looking forward to continuing my Engineer career with a job in a junior software engineering position.",
+    "recency": "If you think I’d be a good match for your projects, contact me!",
+    "button": "Send a message"
+  },
+  "aboveTheFold": {
+    "title": "Hi, I'm Bianca",
+    "description": "<span>Hi, I'm Bianca</span><span class='bold'>Software</span><span class='bold'>Engineer</span>",
+    "description1": "Software",
+    "description2": "Engineer",
+    "scroll": "Scroll"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Got a problem to solve?",
+    "descriptionText": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "recency1": "Need a Frontend developer?",
+    "recency2": "Contact me!",
+    "labelName": "Your name",
+    "labelEmail": "Your email",
+    "labelMessage": "Your message",
+    "Your name": "Your name",
+    "": ""
+  }
+}
