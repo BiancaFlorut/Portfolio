@@ -6,5 +6,11 @@
   },
   "footer": {
     "Imprint": "Imprima"
+  },
+  "aboutMe": {
+    "title": "Hai să lucrăm împreună",
+    "description": "Sunt un ingineră de software stabilită în parte de est al Brandenburgului, Germania. Mă bucur să ajut designerii și companiile să își transpună ideile în viața reală. Aștept cu nerăbdare să îmi continui cariera de inginer cu un loc de muncă într-o poziție de inginer software junior.",
+    "recency": "Dacă credeți că m-aș potrivi pentru proiectele dumneavoastră, contactați-mă!",
+    "button": "Trimite un mesaj"
   }
 }

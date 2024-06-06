@@ -6,5 +6,11 @@
   },
   "footer": {
     "Imprint": "Impressum"
+  },
+  "aboutMe": {
+    "title": "Lass uns zusammen arbeiten",
+    "description": "Ich bin Softwareentwicklerin in Ostbrandenburg, Deutschland. Es macht mir Spaß, Designern und Unternehmen zu helfen, ihre Ideen in die Realität umzusetzen. Ich freue mich darauf, meine Karriere als Ingenieurin fortzusetzen und eine Stelle als Junior Softwareentwicklerin zu finden.",
+    "recency": "Wenn Sie glauben, dass ich gut zu Ihren Projekten passen würde, kontaktieren Sie mich!",
+    "button": "Sende eine Nachricht"
   }
 }

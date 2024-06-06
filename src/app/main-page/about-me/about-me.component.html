@@ -7,21 +7,21 @@
   <div class="container">
     <div class="top">
       <div class="left">
-        <span>Let's work together</span>
+        <span>{{'aboutMe.title' | translate}}</span>
       </div>
       <div class="right">
         <span>
-          I am a software engineer based in East Brandenburg, Germany. I enjoy helping designers and companies bring their ideas into real life. I am looking forward to continuing my Engineer career with a job in a junior software engineering position. 
+          {{'aboutMe.description' | translate}}
         </span>
         <br>
         <span>
-          If you think I’d be a good match for your projects, contact me!
+          {{'aboutMe.recency' | translate}}
         </span>
       </div>
     </div>
     <div class="bottom">
       <a href="#contact">
-        <app-button [buttonText]="'Send a message'"></app-button>
+        <app-button [buttonText]="'aboutMe.button' | translate"></app-button>
       </a>
     </div>
     
