@@ -19,5 +19,17 @@
     "description1": "Software",
     "description2": "Engineer",
     "scroll": "Scroll"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Got a problem to solve?",
+    "descriptionText": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "recency1": "Need a Frontend developer?",
+    "recency2": "Contact me!",
+    "labelName": "Your name",
+    "labelEmail": "Your email",
+    "labelMessage": "Your message",
+    "Your name": "Your name",
+    "": ""
   }
 }

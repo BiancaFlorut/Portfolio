@@ -44,11 +44,10 @@ section {
   }
   &:hover #backToTopCircle {
     fill: none;
-    x: 1;
-    y: 1;
+    transform: translateX(1px) translateY(1px);
     width: 37px;
     height: 37px;
-    rx: 18.5px;
+    // rx="18.5px"; // Replace 'rx: 18.5px' with 'rx="18.5px"'
     stroke: $strongRed;
     stroke-width: "2";
   }
@@ -60,7 +59,7 @@ section {
   max-width: $maxWidth;
   z-index: -1;
   .ellipse1 {
-    @include absPosition(353px, unset, unset, 242px, 204px);
+    @include absPosition(380px, unset, unset, 242px, 204px);
   }
   .ellipse2 {
     @include absPosition(604px, 91px, unset, unset, 73px);

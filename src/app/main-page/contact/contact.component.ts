@@ -2,11 +2,12 @@ import { Component, NgModule, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { ButtonComponent } from '../../shared/button/button.component';
 import { HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, ButtonComponent],
+  imports: [FormsModule, ButtonComponent, TranslateModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -42,6 +43,10 @@ export class ContactComponent {
       },
     },
   };
+
+  constructor(private translate: TranslateService) {
+    this.namePlaceholder = this.translate.instant("contact.labelName");
+  }
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
@@ -87,12 +92,6 @@ export class ContactComponent {
       }
     }
   }
-
-  // onSubmit(form: NgForm) {
-  //   if (form.valid && this.privacyPolicyChecked && form.submitted) {
-  //     console.log('submitted');
-  //   }
-  // }
 
   toggleCheckbox() {
     if (this.privacyPolicyChecked) {

@@ -4,21 +4,19 @@
     <img src="./assets/icons/ellipse.svg" alt="ellipse" class="ellipse1" />
     <img src="./assets/icons/ellipse.svg" alt="ellipse" class="ellipse2" />
   </div>
-
   <div class="container">
     <div class="header">
-      <div class="header-title" id="contact">Contact</div>
+      <div class="header-title" id="contact">{{ "contact.title" | translate }}</div>
     </div>
     <div class="form">
       <div class="description">
-        <div class="description-title">Got a problem to solve?</div>
+        <div class="description-title">{{ "contact.description" | translate }}</div>
         <span class="description-text">
-          Contact me through this form, I am interested in hearing from you,
-          knowing your ideas and contributing to your projects with my work.
+          {{ "contact.descriptionText" | translate }}
         </span>
         <div>
-          <span>Need a Frontend developer?</span>
-          <span>Contact me!</span>
+          <span>{{ "contact.recency1" | translate }}</span>
+          <span>{{ "contact.recency2" | translate }}</span>
         </div>
       </div>
       <form
@@ -29,7 +27,7 @@
         <div>
           <div class="label">
             @if (nameLabelOnFocus) {
-            <span>Your name</span>
+            <span>{{ 'contact.labelName' | translate }}</span>
             }
           </div>
           <div class="error">
@@ -44,7 +42,7 @@
           <input
             [(ngModel)]="formData.name"
             type="text"
-            placeholder="{{ namePlaceholder }}"
+            placeholder={{namePlaceholder}}
             (focus)="onFocus('name')"
             name="name"
             #name="ngModel"

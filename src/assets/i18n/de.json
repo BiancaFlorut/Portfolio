@@ -18,5 +18,15 @@
     "description1": "Software",
     "description2": "Entwicklerin",
     "scroll": "Scrollen"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "description": "Haben Sie ein Problem zu lösen?",
+    "descriptionText": "Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+    "recency1": "Brauchen Sie einen Software Entwickler?",
+    "recency2": "Kontaktieren Sie mich!",
+    "labelName": "Dein Name",
+    "labelEmail": "Deine Email",
+    "labelMessage": "Deine Nachricht"
   }
 }
