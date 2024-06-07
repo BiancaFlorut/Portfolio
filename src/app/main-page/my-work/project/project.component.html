@@ -2,7 +2,7 @@
   @if (project) {
   <div class="left">
     <div class="img-container" [class.jc_start]="!rowReverse" [class.jc_end]="rowReverse">
-      <a href="{{ project.link }}"><img src="{{ project.img }}" alt="{{ project.name }}" /></a>
+      <a href="{{ project.link }}" target="_blank"><img src="{{ project.img }}" alt="{{ project.name }}" /></a>
     </div>
   </div>
   <div class="right" [class.alignRight]="rowReverse" [class.padding_left]="!rowReverse" [class.padding_right]="rowReverse">

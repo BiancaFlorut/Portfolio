@@ -38,5 +38,20 @@
     },
     "checkboxError": "Please accept the privacy policy.",
     "button": "Say hello ;)"
+  },
+  "myWork": {
+    "projects": {
+      "Join": {
+        "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+      },
+      "Sharkie": {
+        "description": "Swim and throw game based on object-oriented approach. Help Sharkie to find coins and poison bottles to fight against the Orca."
+      },
+      "Pokédex": {
+        "description": "Based on the PokéAPI a simple library that provides and catalogues pokemons information."
+      }
+    },
+    "title": "My work",
+    "titleDescription": "Feel free to try out my latest web development projects and look into their code."
   }
 }

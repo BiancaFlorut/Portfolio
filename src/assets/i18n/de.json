@@ -38,5 +38,20 @@
     },
     "checkboxError": "Bitte akzeptieren Sie die Datenschutzbestimmungen.",
     "button": "Hallo sagen ;)"
+  },
+  "myWork": {
+    "projects": {
+      "Join": {
+        "description": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu."
+      },
+      "Sharkie": {
+        "description": "Schwimm- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Sharkie, Münzen und Giftflaschen zu finden, um gegen den Orca zu kämpfen."
+      },
+      "Pokédex": {
+        "description": "Basierend auf der PokéAPI eine einfache Bibliothek, die Informationen über Pokémon bereitstellt und katalogisiert."
+      }
+    },
+    "title": "Meine Projekte",
+    "titleDescription": "Probieren Sie meine neuesten Webentwicklungsprojekte aus und schauen Sie sich deren Code an."
   }
 }

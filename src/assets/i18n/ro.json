@@ -38,5 +38,20 @@
     },
     "checkboxError": "Vă rugăm să acceptați politica de confidențialitate.",
     "button": "Salută-mă ;)"
+  },
+  "myWork": {
+    "projects": {
+      "Join": {
+        "description": "Manager de sarcini inspirat de sistemul Kanban. Creați și organizați sarcini utilizând funcțiile de glisare și fixare, atribuiți utilizatori și categorii."
+      },
+      "Sharkie": {
+        "description": "Joc de înot și aruncare bazat pe o abordare orientată pe obiecte. Ajută-l pe Sharkie să găsească monede și sticle de otravă pentru a lupta împotriva Orca."
+      },
+      "Pokédex": {
+        "description": "Bazat pe PokéAPI, o bibliotecă simplă care furnizează și cataloghează informații despre pokemoni."
+      }
+    },
+    "title": "Proiectele mele",
+    "titleDescription": "Simțiți-vă liber să încercați ultimele mele proiecte de dezvoltare web și să vă uitați în codul lor."
   }
 }

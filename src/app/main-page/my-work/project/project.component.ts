@@ -13,7 +13,9 @@ export class ProjectComponent {
   @Input() project: Project | undefined;
   @Input() rowReverse: boolean = false;
 
-  openLink(link:string) {
+  
+
+  openLink(link: string) {
     window.open(link, '_blank');
   }
 }

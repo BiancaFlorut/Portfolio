@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { ProjectComponent } from './project/project.component';
 import { Project } from '../../models/project.interface';
+import { LangChangeEvent, TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-my-work',
   standalone: true,
-  imports: [ProjectComponent],
+  imports: [ProjectComponent, TranslateModule],
   templateUrl: './my-work.component.html',
   styleUrl: './my-work.component.scss'
 })
@@ -35,5 +36,24 @@ export class MyWorkComponent {
       github: 'https://github.com/BiancaFlorut/Pokedex',
       link: 'https://biancaflorut.github.io/Pokedex/'
     }
-  ]
+  ];
+
+  constructor(private translate: TranslateService) {
+    this.updateProjects();
+  }
+
+
+  ngOnInit(): void {
+    this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
+      this.updateProjects();
+    });
+  }
+
+  updateProjects() {
+    this.projects.forEach(project => {
+      this.translate.get("myWork.projects." + project.name + ".description").subscribe((res: string) => {
+        project.description = res;
+      });
+    });
+  }
 }
