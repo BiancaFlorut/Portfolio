@@ -20,6 +20,7 @@ section {
   padding: 100px calc($sidePadding + 140px) ;
   max-width: $maxWidth;
   box-sizing: border-box;
+  gap:17px;
 }
 
 .header-title {
@@ -48,4 +49,8 @@ section {
       height: 75px;
     }
   }
+}
+
+.header-title {
+  max-width: none;
 }

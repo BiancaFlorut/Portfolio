@@ -53,5 +53,14 @@
     },
     "title": "Proiectele mele",
     "titleDescription": "Simțiți-vă liber să încercați ultimele mele proiecte de dezvoltare web și să vă uitați în codul lor."
+  },
+  "skills": {
+    "title": "Calificările mele"
+  },
+  "imprint": {
+    "title": "Imprima",
+    "description": "Această pagină a fost creată de:",
+    "country": "Germania",
+    "phone": "Telefon"
   }
 }

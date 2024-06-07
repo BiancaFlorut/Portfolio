@@ -53,5 +53,14 @@
     },
     "title": "Meine Projekte",
     "titleDescription": "Probieren Sie meine neuesten Webentwicklungsprojekte aus und schauen Sie sich deren Code an."
+  },
+  "skills": {
+    "title": "Meine Faehigkeiten"
+  },
+  "imprint": {
+    "title": "Impressum",
+    "description": "Diese Website wurde erstellt von:",
+    "country": "Deutschland",
+    "phone": "Telefonnummer"
   }
 }

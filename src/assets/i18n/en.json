@@ -53,5 +53,14 @@
     },
     "title": "My work",
     "titleDescription": "Feel free to try out my latest web development projects and look into their code."
+  },
+  "skills": {
+    "title": "My skills"
+  },
+  "imprint": {
+    "title": "Imprint",
+    "description": "This website is created by:",
+    "country": "Germany",
+    "phone": "Phone"
   }
 }
