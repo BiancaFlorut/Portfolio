@@ -246,9 +246,15 @@ textarea::placeholder {
 @media (max-width: 1300px) {
   .container {
     padding: 0 $sidePaddingTablet;
+    padding-bottom: 56px;
   }
   .up-button {
     left: $sidePaddingTablet;
+  }
+  .ellipse-container {
+    .ellipse2 {
+      right: $sidePaddingTablet;
+    }
   }
 }
 
@@ -288,6 +294,7 @@ textarea::placeholder {
 @media (max-width: 530px) {
   .container {
     padding: 0 $sidePaddingMobile;
+    padding-bottom: 56px;
   }
   .up-button {
     left: $sidePaddingMobile;
@@ -295,7 +302,7 @@ textarea::placeholder {
   }
   .ellipse-container {
     .ellipse2 {
-      @include absPosition(840px, 16px, unset, unset, 42px);
+      top: 840px;
     }
   }
 }
@@ -303,7 +310,7 @@ textarea::placeholder {
 @media (max-width: 420px) {
   .ellipse-container {
     .ellipse2 {
-      @include absPosition(900px, 16px, unset, unset, 42px);
+      top:900px;
     }
   }
 }
@@ -311,7 +318,7 @@ textarea::placeholder {
 @media (max-width: 360px) {
   .ellipse-container {
     .ellipse2 {
-      display: none;
+      top:1000px;
     }
   }
 }

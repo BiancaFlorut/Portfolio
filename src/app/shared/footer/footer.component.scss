@@ -14,7 +14,6 @@ footer {
   font-size: 23px;
   line-height: 27.6px;
   @include displayFlex(column, center, center);
-  padding: 0 100px;
   box-sizing: border-box;
   .container {
     width: 100%;
@@ -25,6 +24,7 @@ footer {
 
 .logo-container {
   position: relative;
+  @include displayFlex(row, center, center);
   left: 0;
   > a {
     position: absolute;
@@ -56,6 +56,7 @@ footer {
 .social-container {
   position: relative;
   right: 0;
+  @include displayFlex(row, center, center);
 }
 
 .impress {
@@ -97,5 +98,35 @@ footer {
       }
     }
     
+  }
+}
+
+@media  (max-width: 1300px) {
+  .logo-container {
+
+    > a {
+      left: $sidePaddingTablet;
+    }
+  }
+  .social {
+    right: $sidePaddingTablet;
+  }
+}
+
+@media  (max-width: 900px) {
+  .logo-container {
+      > a {
+        position: unset;
+      }
+  }
+  footer {
+    height: 380px;
+    .container {
+      flex-direction: column;
+      gap: 23px;
+    }
+  }
+  .social {
+    position: unset;
   }
 }
