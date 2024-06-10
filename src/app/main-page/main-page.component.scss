@@ -8,3 +8,10 @@
   bottom: 0;
   transform: translate(-50%, 50%);
 }
+
+@media (max-width: 1000px) {
+  .ellipse_center {
+    height: 156px;
+    width: 156px;
+  }
+}

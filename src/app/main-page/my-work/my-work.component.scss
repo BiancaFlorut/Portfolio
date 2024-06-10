@@ -26,7 +26,7 @@ section {
   }
   .ellipse3 {
     @include absPosition(577px, unset, unset, unset, 393.32px);
-    transform: translateX(-50%) rotate(81deg) ;
+    transform: translateX(-50%) rotate(81deg);
     z-index: -1;
   }
   .ellipse4 {
@@ -63,4 +63,80 @@ section {
   @include displayFlex(column, center, center);
   gap: 70px;
   width: 100%;
+}
+
+app-project {
+  width: 100%;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    padding: 111px $sidePaddingTablet 234px $sidePaddingTablet;
+  }
+}
+
+@media (max-width: 1230px) {
+  .ellipse-container {
+    .ellipse1 {
+      width: 45px;
+      height: 45px;
+    }
+    .ellipse2 {
+      width: 70px;
+      height: 70px;
+      top: 286px;
+      right: $sidePaddingTablet;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .projects {
+    gap: 37px;
+  }
+  .ellipse-container {
+    .ellipse3 {
+      top: 400px;
+      width: 223.11px;
+      height: 223.11px;
+    }
+    .ellipse4 {
+      width: 269.17px;
+      height: 269.17px;
+    }
+    .ellipse5 {
+      top: 1220px;
+    }
+    .ellipse6 {
+      width: 134.91px;
+      height: 134.91px;
+      top: 1650px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    .title-description {
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+  .container {
+    padding: 93px $sidePaddingMobile 15px $sidePaddingMobile;
+  }
+}
+
+@media (max-width: 530px) {
+
+
+  .ellipse-container {
+    .ellipse5 {
+      display: none;
+    }
+    .ellipse4 {
+      width: 180px;
+      height: 180px;
+    }
+  }
 }

@@ -54,3 +54,32 @@ section {
 .header-title {
   max-width: none;
 }
+
+@media (max-width: 1300px) {
+  .container {
+    padding: 100px $sidePaddingTablet;
+  }
+}
+
+@media (max-width: 1000px) {
+  .skills {
+    gap: 74px;
+    row-gap: 17px;
+    >div {
+      height: 100px;
+      text-align: center;
+      >img {
+        height: 60px;
+      }
+    }
+  }
+  .container {
+    gap: 35px;
+  }
+}
+
+@media (max-width: 530px) {
+  .container {
+    padding: 43px $sidePaddingMobile;
+  }
+}

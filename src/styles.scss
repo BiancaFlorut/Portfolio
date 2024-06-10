@@ -59,6 +59,9 @@ body {
 html, body { height: 100%; }
 body { margin: 0; }
 
-.d_none {
-  display: none;
+@media (max-width: 900px) {
+  .header-title {
+    font-size: 64px;
+    line-height: 64px;
+  }
 }

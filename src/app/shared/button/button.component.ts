@@ -12,4 +12,5 @@ export class ButtonComponent {
   @Input() buttonText: string = 'Button';
   @Input() link: string = '';
   @Input() disabled: boolean = false;
+  @Input() class: string = '';
 }

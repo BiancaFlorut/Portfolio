@@ -17,7 +17,10 @@
       </div>
       <div class="description">{{ project.description }}</div>
     </div>
-    <app-button [buttonText]="'GitHub'" [link]="project.link" (click)="openLink(project.github)"></app-button>
+    <div class="buttons">
+      <app-button [buttonText]="'Live test'" class="live-test-button" [class]="'strong-red'" [link]="project.link" (click)="openLink(project.link)"></app-button>
+      <app-button [buttonText]="'GitHub'" [link]="project.link" (click)="openLink(project.github)"></app-button>
+    </div>
   </div>
   }
 </div>
