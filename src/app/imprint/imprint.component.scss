@@ -59,3 +59,21 @@ section {
   }
 }
 
+@media (max-width: 950px) {
+  .ellipse-container {
+    .ellipse2 {
+      top: 420px;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .ellipse-container {
+    .ellipse3 {
+      right: -260px;
+    }
+    .ellipse2 {
+      display: none;
+    }
+  }
+}
