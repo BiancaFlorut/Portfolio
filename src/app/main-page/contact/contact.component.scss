@@ -242,3 +242,76 @@ textarea::placeholder {
   @include displayFlex(row, center, center);
   padding-top: 12px;
 }
+
+@media (max-width: 1300px) {
+  .container {
+    padding: 0 $sidePaddingTablet;
+  }
+  .up-button {
+    left: $sidePaddingTablet;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    .header-title {
+      position: unset;
+      transform: translate(0, 0);
+      padding-top: 66px;
+    }
+  }
+  .container {
+    gap: 35px;
+  }
+  .form {
+    flex-direction: column;
+    gap: 35px;
+  }
+  .description, .form-container {
+    width: 100%;
+  }
+  .ellipse-container {
+    .ellipse1 {
+      width: 101.57px;
+      height: 101.57px;
+      left: 50%;
+      transform: translateX(-50%);
+      right: unset;
+      top: 493px;
+    }
+    .ellipse2 {
+      @include absPosition(830px, 16px, unset, unset, 42px);
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .container {
+    padding: 0 $sidePaddingMobile;
+  }
+  .up-button {
+    left: $sidePaddingMobile;
+    bottom: 30px;
+  }
+  .ellipse-container {
+    .ellipse2 {
+      @include absPosition(840px, 16px, unset, unset, 42px);
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .ellipse-container {
+    .ellipse2 {
+      @include absPosition(900px, 16px, unset, unset, 42px);
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .ellipse-container {
+    .ellipse2 {
+      display: none;
+    }
+  }
+}

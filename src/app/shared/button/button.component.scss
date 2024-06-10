@@ -49,3 +49,9 @@ button:disabled {
   background-color: $strongRed;
   color: white;
 }
+
+@media (max-width: 600px) {
+  button {
+    padding: 13px 24px
+  }
+}
