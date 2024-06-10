@@ -18,6 +18,12 @@ app-header, app-footer {
   align-items: center;
 }
 
+app-header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
 
 .router {
   app-imprint {

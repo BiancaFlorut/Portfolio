@@ -1,10 +1,11 @@
+<app-header></app-header>
 <section>
   <div class="languages">
     @for (lang of languages; track lang) {
       <button class="language" (click)="changeLanguage(lang)">{{ lang | translate }}</button>
     }
   </div>
-  <app-header></app-header>
+
   <router-outlet class="router"></router-outlet>
   <app-footer></app-footer>
 </section>

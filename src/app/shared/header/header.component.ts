@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import {  RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -10,5 +10,26 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  isMenuOpen = false;
+
+  constructor() { }
+
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  navigateTo(id: string) {
+    let target = document.getElementById(id);
+    target?.scrollIntoView({ behavior: 'smooth' });
+    const svgElement = document.getElementById('menu');
+    svgElement?.click();
+    const animate = document.getElementById('reverse');
+    console.log(animate);
+    if (animate && animate instanceof SVGAnimateElement) {
+      animate.beginElement();
+    }
+    
+  }
 
 }

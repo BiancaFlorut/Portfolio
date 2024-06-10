@@ -37,7 +37,9 @@ section {
   position: absolute;
   bottom: 0;
   left: $sidePadding;
-  width: 700px;
+  width: 50%;
+  max-height: 90%;
+  object-fit: contain;
 }
 
 .right-side {
@@ -81,6 +83,7 @@ section {
   #greeting.en {
     letter-spacing: 10px;
   }
+  
   #greeting.de {
     letter-spacing: -4px;
   }
@@ -100,6 +103,40 @@ section {
   #description2.de {
     letter-spacing: -4px;
     font-size: 90px;
+  }
+
+  @media (max-width: 1450px) {
+    #greeting.en {
+      letter-spacing: 0px;
+      font-size: 54px;
+      line-height: 54px;
+    }
+    #description1.en {
+      font-size: 100px;
+    }
+    #description2.en {
+      font-size: 90px;
+      letter-spacing: 10px;
+    }
+    .bold {
+      line-height: 80px;
+    }
+  }
+
+  @media(max-width: 1260px) {
+    #greeting.en {
+      font-size: 42px;
+      line-height: 42px;
+    }
+    #description1.en {
+      font-size: 80px;
+    }
+    #description2.en {
+      font-size: 80px;
+    }
+    .bold {
+      line-height: 70px;
+    }
   }
 }
 .scroll {
@@ -136,4 +173,17 @@ section {
     }
   }
   
+}
+
+@media  (max-width: 1300px) {
+  .photo {
+    left: $sidePaddingTablet;
+    width: 60%;
+  }
+  .right-side {
+    right: $sidePaddingTablet;
+  }
+  .social {
+    right: $sidePaddingTablet;
+  }
 }
