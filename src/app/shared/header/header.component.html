@@ -82,5 +82,13 @@
     <div>
       <a class="link" (click)="navigateTo('contact')">{{ "contact.title" | translate }}</a>
     </div>
+    @for (language of languages; track $index) {
+      <div>
+        <a
+          class="link"
+          (click)="changeLanguage(language)"
+        >{{ language | translate }}</a>
+      </div>
+    }
   </div>
 </div>

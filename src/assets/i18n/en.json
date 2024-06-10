@@ -1,4 +1,7 @@
 {
+  "en": "En",
+  "de": "De",
+  "ro": "Ro",
   "header": {
     "About me": "About me",
     "Skill Set": "Skill set",
@@ -55,7 +58,7 @@
     "titleDescription": "Feel free to try out my latest web development projects and look into their code."
   },
   "skills": {
-    "title": "My skills"
+    "title": "Skill Set"
   },
   "imprint": {
     "title": "Imprint",

@@ -60,7 +60,37 @@ section {
     font-weight: 400;
     line-height: 27.6px;
   } 
-  @include displayFlex(column, center, center);
+  @include displayFlex(column, center, flex-start);
 }
 
+@media (max-width: 1300px) {
+  .container {
+    padding: 0 $sidePaddingTablet;
+    padding-bottom: 123px;
+  }
+}
 
+@media (max-width: 1160px) {
+  .top {
+    flex-direction: column;
+  }
+  .container {
+    gap: 34px;
+  }
+  .left {
+    > span {
+      line-height: 64px;
+      font-size: 64px;
+    }
+  }
+  .bottom {
+    width: 100%;
+  }
+}
+
+@media (max-width: 530px) {
+  .container {
+    padding: 0 $sidePaddingMobile;
+    padding-bottom: 49px;
+  }
+}

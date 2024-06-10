@@ -48,3 +48,9 @@ app-header {
     }
   }
 }
+
+@media (max-width: 1380px) {
+  .languages {
+    display: none;
+  } 
+}
