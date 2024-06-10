@@ -3,7 +3,7 @@
 .ellipse {
   position: absolute;
   height: 892px;
-  width: 892px;
+  width: 62%;
   z-index: 0;
   left: -199px;
   top: -71px;
@@ -24,11 +24,12 @@ section {
 }
 
 .content {
-  max-width: $maxWidth;	.content {
-  max-width: 1440px;
-  position: relative;
-  width: 100%;
-}
+  max-width: $maxWidth;
+  .content {
+    max-width: 1440px;
+    position: relative;
+    width: 100%;
+  }
   position: relative;
   width: 100%;
 }
@@ -59,14 +60,14 @@ section {
   flex-direction: column;
   font-size: 64px;
   line-height: 64px;
-  >span:nth-child(1) {
+  > span:nth-child(1) {
     padding-bottom: 17px;
   }
-  >span:nth-child(2) {
+  > span:nth-child(2) {
     font-size: 120px;
     letter-spacing: -2px;
   }
-  >span:nth-child(3) {
+  > span:nth-child(3) {
     font-size: 110px;
     letter-spacing: 12px;
   }
@@ -83,7 +84,7 @@ section {
   #greeting.en {
     letter-spacing: 10px;
   }
-  
+
   #greeting.de {
     letter-spacing: -4px;
   }
@@ -123,7 +124,7 @@ section {
     }
   }
 
-  @media(max-width: 1260px) {
+  @media (max-width: 1260px) {
     #greeting.en {
       font-size: 42px;
       line-height: 42px;
@@ -133,9 +134,43 @@ section {
     }
     #description2.en {
       font-size: 80px;
+      letter-spacing: 4px;
     }
     .bold {
       line-height: 70px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #greeting.en {
+      font-size: 32px;
+      line-height: 32px;
+    }
+    #description1.en {
+      font-size: 60px;
+    }
+    #description2.en {
+      font-size: 60px;
+      letter-spacing: 4px;
+    }
+    .bold {
+      line-height: 50px;
+    }
+  }
+  @media (max-width: 480px) {
+    #greeting.en {
+      font-size: 26px;
+      line-height: 26px;
+    }
+    #description1.en {
+      font-size: 42px;
+    }
+    #description2.en {
+      font-size: 42px;
+      letter-spacing: 4px;
+    }
+    .bold {
+      line-height: 50px;
     }
   }
 }
@@ -158,7 +193,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  >div {
+  > div {
     width: 40px;
     height: 40px;
     display: flex;
@@ -172,10 +207,9 @@ section {
       }
     }
   }
-  
 }
 
-@media  (max-width: 1300px) {
+@media (max-width: 1300px) {
   .photo {
     left: $sidePaddingTablet;
     width: 60%;
@@ -185,5 +219,99 @@ section {
   }
   .social {
     right: $sidePaddingTablet;
+  }
+  .ellipse {
+    left: -300px;
+    top: -200px;
+    width: 82%;
+  }
+}
+
+@media (max-width: 1180px) {
+  .right-side {
+    gap: 60px;
+  }
+  .photo {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1060px) {
+  .photo {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .scroll,
+  .social {
+    display: none;
+  }
+  .right-side {
+    justify-content: flex-start;
+    margin-top: 120px;
+    width: 100%;
+    right: 0;
+  }
+  .photo {
+    max-height: 60vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+  }
+  .ellipse {
+    width: 157%;
+    left: -400px;
+  }
+  .title {
+    color: white;
+  }
+}
+
+@media (max-width: 680px) {
+  .ellipse {
+    left: -308px;
+  }
+}
+
+@media (max-height: 800px) {
+  .scroll {
+    > img {
+      height: 26vh;
+    }
+  }
+}
+
+@media (max-height: 600px) and (min-width: 1000px) {
+  .scroll, .social {
+    display: none;
+  }
+  .right-side {
+    justify-content: center;
+  }
+}
+
+@media (max-height: 740px)  {
+  .photo {
+    display: none;
+  }
+}
+
+@media (max-width: 510px) {
+  .ellipse {
+    left: -282px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ellipse {
+    width: 720px;
+    height: 720px;
+    left: -228px;
+    top: -22px;
+  }
+  #greeting.en {
+    font-size: 32px;
+    line-height: 32px;
   }
 }

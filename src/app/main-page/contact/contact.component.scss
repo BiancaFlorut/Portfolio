@@ -72,7 +72,14 @@ section {
   .header-title {
     position: absolute;
     transform: translateY(-50%);
+    width: 100%;
   }
+}
+
+.anchor {
+  position: absolute;
+  top: -128px;
+  width: 100%;
 }
 
 .form {

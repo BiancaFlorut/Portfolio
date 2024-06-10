@@ -18,7 +18,6 @@ section {
   width: 100%;
   height: 100%;
   max-width: $maxWidth;
-  margin-right:-150px ;
   .ellipse1 {
     @include absPosition(50px, unset, unset, 40%, 108.75px);
   }

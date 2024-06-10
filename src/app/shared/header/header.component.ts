@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 import {  RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
@@ -12,7 +13,8 @@ import { TranslateModule } from '@ngx-translate/core';
 export class HeaderComponent {
   isMenuOpen = false;
 
-  constructor() { }
+  constructor(private readonly scroller: ViewportScroller) { }
+
 
 
   toggleMenu() {
@@ -20,12 +22,10 @@ export class HeaderComponent {
   }
 
   navigateTo(id: string) {
-    let target = document.getElementById(id);
-    target?.scrollIntoView({ behavior: 'smooth' });
+    this.scroller.scrollToAnchor(id);
     const svgElement = document.getElementById('menu');
     svgElement?.click();
     const animate = document.getElementById('reverse');
-    console.log(animate);
     if (animate && animate instanceof SVGAnimateElement) {
       animate.beginElement();
     }
