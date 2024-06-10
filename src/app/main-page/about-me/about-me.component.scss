@@ -3,6 +3,9 @@
 section {
   width: 100%;
   @include displayFlex(column, center, center);
+  background-color: white;
+  position: relative;
+  z-index: 1;
 }
 .container {
   @include displayFlex(column, center, flex-end);
@@ -96,5 +99,18 @@ section {
   .container {
     padding: 0 $sidePaddingMobile;
     padding-bottom: 49px;
+  }
+}
+
+@media (max-width: 380px) {
+  .left {
+    > span {
+      line-height: 54px;
+      font-size: 54px;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto;
+    }
   }
 }

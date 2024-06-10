@@ -286,7 +286,7 @@ textarea::placeholder {
       top: 493px;
     }
     .ellipse2 {
-      @include absPosition(830px, 16px, unset, unset, 42px);
+      @include absPosition(930px, 16px, unset, unset, 42px);
     }
   }
 }
@@ -302,15 +302,7 @@ textarea::placeholder {
   }
   .ellipse-container {
     .ellipse2 {
-      top: 840px;
-    }
-  }
-}
-
-@media (max-width: 420px) {
-  .ellipse-container {
-    .ellipse2 {
-      top:900px;
+      top: 940px;
     }
   }
 }
@@ -318,7 +310,7 @@ textarea::placeholder {
 @media (max-width: 360px) {
   .ellipse-container {
     .ellipse2 {
-      top:1000px;
+      top:1100px;
     }
   }
 }

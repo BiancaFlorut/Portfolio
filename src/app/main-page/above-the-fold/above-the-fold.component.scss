@@ -21,6 +21,7 @@ section {
   );
   display: flex;
   justify-content: center;
+  background-color: white;
 }
 
 .content {
@@ -123,7 +124,6 @@ section {
       line-height: 80px;
     }
   }
-
   @media (max-width: 1260px) {
     #greeting.en {
       font-size: 42px;
@@ -140,23 +140,6 @@ section {
       line-height: 70px;
     }
   }
-
-  @media (max-width: 480px) {
-    #greeting.en {
-      font-size: 32px;
-      line-height: 32px;
-    }
-    #description1.en {
-      font-size: 60px;
-    }
-    #description2.en {
-      font-size: 60px;
-      letter-spacing: 4px;
-    }
-    .bold {
-      line-height: 50px;
-    }
-  }
   @media (max-width: 480px) {
     #greeting.en {
       font-size: 26px;
@@ -171,6 +154,68 @@ section {
     }
     .bold {
       line-height: 50px;
+    }
+  }
+  @media (max-width: 1380px) {
+    #greeting.de {
+      font-size: 46px;
+      line-height: 46px;
+    }
+    #description1.de {
+      font-size: 90px;
+      letter-spacing: 1px;
+    }
+    #description2.de {
+      font-size: 74px;
+    }
+  }
+  @media (max-width: 720px) {
+    #greeting.de {
+      font-size: 36px;
+      line-height: 36px;
+      letter-spacing: 0;
+    }
+    #description1.de {
+      font-size: 70px;
+      line-height: 70px;
+      letter-spacing: 9px;
+    }
+    #description2.de {
+      font-size: 67px;
+      line-height: 67px;
+    }
+  }
+  @media (max-width: 550px) {
+    #greeting.de {
+      font-size: 26px;
+      line-height: 26px;
+      letter-spacing: 0;
+    }
+    #description1.de {
+      font-size: 54px;
+      line-height: 54px;
+      letter-spacing: 5px;
+    }
+    #description2.de {
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: -2px;
+    }
+  }
+  @media (max-width: 360px) {
+    #greeting.de {
+      font-size: 20px;
+      line-height: 20px;
+    }
+    #description1.de {
+      font-size: 50px;
+      line-height: 50px;
+      letter-spacing: 2px;
+    }
+    #description2.de {
+      font-size: 42px;
+      line-height: 42px;
+      letter-spacing: -2px;
     }
   }
 }
@@ -283,15 +328,17 @@ section {
 }
 
 @media (max-height: 600px) and (min-width: 1000px) {
-  .scroll, .social {
+  .scroll,
+  .social {
     display: none;
   }
   .right-side {
     justify-content: center;
+    position: relative;
   }
 }
 
-@media (max-height: 740px)  {
+@media (max-height: 740px) {
   .photo {
     display: none;
   }

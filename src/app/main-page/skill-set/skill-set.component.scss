@@ -26,6 +26,9 @@ section {
 .header-title {
   color: white;
   text-align: center;
+  overflow: hidden;
+  word-wrap: break-word;
+  max-width: 100%;
 }
 
 .skills {

@@ -63,5 +63,23 @@ body { margin: 0; }
   .header-title {
     font-size: 64px;
     line-height: 64px;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
+}
+
+@media (max-width: 440px) {
+  .header-title {
+    font-size: 58px;
+    line-height: 58px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-title {
+    font-size: 48px;
+    line-height: 48px;
   }
 }
