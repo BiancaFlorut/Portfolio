@@ -71,6 +71,16 @@ app-project {
   width: 100%;
 }
 
+@media (max-width: 1430px) {
+  .ellipse-container {
+    .ellipse4 {
+      width: 552px;
+      height: 552px;
+      top: 962px;
+    }
+  }
+}
+
 @media (max-width: 1300px) {
   .container {
     padding: 111px $sidePaddingTablet 234px $sidePaddingTablet;

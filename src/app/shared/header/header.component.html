@@ -57,18 +57,19 @@
   </div>
   <div class="links">
     <div>
-      <a class="link" href="#aboutMe">{{ "header.About me" | translate }}</a>
+      <a class="link" href="#aboutMe" [title]="'header.About me' | translate">{{ "header.About me" | translate }}</a>
     </div>
     <div>
-      <a class="link" href="#skillSet">{{ "header.Skill Set" | translate }}</a>
+      <a class="link" href="#skillSet" [title]="'header.Skill Set' | translate">{{ "header.Skill Set" | translate }}</a>
     </div>
     <div>
-      <a class="link" href="#myWork">{{ "header.My Projects" | translate }}</a>
+      <a class="link" href="#myWork" [title]="'header.My Projects' | translate">{{ "header.My Projects" | translate }}</a>
     </div>
     @for (language of languages; track $index) {
       <div>
         <a
           class="link"
+          [title]="language | translate"
           (click)="changeLanguage(language)"
         >{{ language | translate }}</a>
       </div>
