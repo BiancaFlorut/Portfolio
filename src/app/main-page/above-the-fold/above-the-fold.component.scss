@@ -26,13 +26,9 @@ section {
 
 .content {
   max-width: $maxWidth;
-  .content {
-    max-width: 1440px;
-    position: relative;
-    width: 100%;
-  }
   position: relative;
   width: 100%;
+  overflow-x: clip;
 }
 
 .photo {
@@ -81,6 +77,7 @@ section {
 
   #greeting.ro {
     font-size: 56px;
+    line-height: 56px;
   }
   #greeting.en {
     letter-spacing: 10px;
@@ -92,6 +89,7 @@ section {
 
   #description1.ro {
     letter-spacing: 10px;
+    line-height: 120px;
   }
   #description1.de {
     letter-spacing: 0;
@@ -125,11 +123,11 @@ section {
     }
   }
   @media (max-width: 1260px) {
-    #greeting.en {
+    #greeting.en, #greeting.ro {
       font-size: 42px;
       line-height: 42px;
     }
-    #description1.en {
+    #description1.en, #description1.ro {
       font-size: 80px;
     }
     #description2.en {
@@ -138,6 +136,15 @@ section {
     }
     .bold {
       line-height: 70px;
+    }
+    #description1.ro {
+      line-height: 80px;
+      letter-spacing: 14px;
+    }
+    #description2.ro {
+      line-height: 80px;
+      font-size: 80px;
+      letter-spacing: -1px;
     }
   }
   @media (max-width: 480px) {
@@ -154,6 +161,20 @@ section {
     }
     .bold {
       line-height: 50px;
+    }
+
+    #greeting.ro {
+      font-size: 36px;
+      line-height: 40px;
+      letter-spacing: -1px;
+    }
+    #description1.ro {
+      font-size: 62px;
+      line-height: 62px;
+    }
+    #description2.ro {
+      font-size: 62px;
+      letter-spacing: 1px;
     }
   }
   @media (max-width: 1380px) {
@@ -215,6 +236,20 @@ section {
     #description2.de {
       font-size: 42px;
       line-height: 42px;
+      letter-spacing: -2px;
+    }
+    #greeting.ro {
+      font-size: 28px;
+      line-height: 28px;
+    }
+    #description1.ro {
+      font-size: 60px;
+      line-height: 60px;
+      letter-spacing: 2px;
+    }
+    #description2.ro {
+      font-size: 52px;
+      line-height: 52px;
       letter-spacing: -2px;
     }
   }

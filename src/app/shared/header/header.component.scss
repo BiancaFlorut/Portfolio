@@ -14,7 +14,8 @@ header {
   padding: 24px;
   padding-left: $sidePadding;
   padding-right: $sidePadding;
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -65,11 +66,11 @@ div {
 }
 
 .menu-overlay {
-  display: none;
   position: absolute;
   top: 0;
   right: -100vw;
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
   height: 100vh;
   z-index: 3;
   background: rgb(255, 234, 234);
@@ -90,6 +91,7 @@ div {
 }
 
 .openMenu {
+  display: flex;
   right: 0 !important;
 }
 
@@ -110,10 +112,6 @@ div {
   }
   .menu {
     display: block;
-  }
-
-  .menu-overlay {
-    display: flex;
   }
 }
 

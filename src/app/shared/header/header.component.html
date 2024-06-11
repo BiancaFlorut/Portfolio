@@ -65,10 +65,18 @@
     <div>
       <a class="link" href="#myWork">{{ "header.My Projects" | translate }}</a>
     </div>
+    @for (language of languages; track $index) {
+      <div>
+        <a
+          class="link"
+          (click)="changeLanguage(language)"
+        >{{ language | translate }}</a>
+      </div>
+    }
   </div>
   
 </header>
-<div class="menu-overlay" [class.openMenu]="isMenuOpen">
+<div class="menu-overlay" [ngClass]="{'openMenu': isMenuOpen}">
   <div class="menu-overlay-links">
     <div>
       <a class="link" (click)="navigateTo('aboutMe')">{{ "header.About me" | translate }}</a>
@@ -86,7 +94,7 @@
       <div>
         <a
           class="link"
-          (click)="changeLanguage(language)"
+          (click)="changeLanguageAndCloseMenu(language)"
         >{{ language | translate }}</a>
       </div>
     }

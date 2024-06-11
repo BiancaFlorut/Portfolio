@@ -12,7 +12,8 @@ section {
 }
 
 app-header, app-footer {
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,6 +23,7 @@ app-header {
   position: fixed;
   top: 0;
   z-index: 1000;
+  overflow-x: clip;
 }
 
 

@@ -1,4 +1,4 @@
-import { ViewportScroller } from '@angular/common';
+import { CommonModule, ViewportScroller } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import {  RouterLink } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
@@ -6,7 +6,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, TranslateModule],
+  imports: [RouterLink, TranslateModule, CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
@@ -34,7 +34,7 @@ export class HeaderComponent {
     this.translateService.use(defaultLanguage);
   }
 
-  changeLanguage(language: string) {
+  changeLanguageAndCloseMenu(language: string) {
     this.translateService.use(language);
     localStorage.setItem('lang', language);
     this.closeMenu();
@@ -47,6 +47,11 @@ export class HeaderComponent {
     if (animate && animate instanceof SVGAnimateElement) {
       animate.beginElement();
     }
+  }
+
+  changeLanguage(language: string) {
+    this.translateService.use(language);
+    localStorage.setItem('lang', language);
   }
 
 }
