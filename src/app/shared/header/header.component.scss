@@ -1,6 +1,13 @@
 @import "../../../shared/shared_var.scss";
 
+
 header {
+  background-color: white;
+  width: 100%;
+  @include displayFlex(row, center, center);
+}
+
+.container {
   > img {
     width: 46px;
     cursor: pointer;
@@ -9,7 +16,8 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  height: 120px;
+  height: 60px;
+  
   z-index: 4;
   padding: 24px;
   padding-left: $sidePadding;
@@ -97,7 +105,7 @@ header {
 }
 
 @media (max-width: 1300px) {
-  header {
+  .container {
     padding-left: $sidePaddingTablet;
     padding-right: $sidePaddingTablet;
   }
@@ -113,7 +121,7 @@ header {
 }
 
 @media (max-width: 530px) {
-  header {
+  .container {
     padding-left: $sidePaddingMobile;
     padding-right: $sidePaddingMobile;
   }
