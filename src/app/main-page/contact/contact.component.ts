@@ -1,4 +1,4 @@
-import { Component, NgModule, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { ButtonComponent } from '../../shared/button/button.component';
 import { HttpClient } from '@angular/common/http';
@@ -125,4 +125,5 @@ export class ContactComponent {
       this.checkbox = 'checked';
     }
   }
+
 }

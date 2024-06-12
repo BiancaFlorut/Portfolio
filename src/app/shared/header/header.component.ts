@@ -2,6 +2,7 @@ import { CommonModule, ViewportScroller } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import {  RouterLink } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { ScrollService } from '../../services/scroll.service';
 
 @Component({
   selector: 'app-header',
@@ -13,11 +14,10 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 export class HeaderComponent {
   isMenuOpen = false;
   languages = ['en', 'de', 'ro'];
-  private translateService = inject(TranslateService);
+  translateService = inject(TranslateService);
+  scrollService = inject(ScrollService);
 
   constructor(private readonly scroller: ViewportScroller) { }
-
-
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;

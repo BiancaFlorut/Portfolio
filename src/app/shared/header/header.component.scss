@@ -52,8 +52,13 @@ header {
     height: 0px;
     font-weight: 700;
     visibility: hidden;
-  overflow: hidden;
+    overflow: hidden;
   }
+}
+
+.active {
+  text-decoration: underline;
+  font-weight: 700;
 }
 
 .logo {

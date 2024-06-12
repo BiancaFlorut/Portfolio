@@ -58,19 +58,20 @@
     </div>
     <div class="links">
       <div>
-        <a class="link" href="#aboutMe" [title]="'header.About me' | translate">{{ "header.About me" | translate }}</a>
+        <a class="link" [class.active]="scrollService.isAboutMeInView"  href="#aboutMe" [title]="'header.About me' | translate">{{ "header.About me" | translate }}</a>
       </div>
       <div>
-        <a class="link" href="#skillSet" [title]="'header.Skill Set' | translate">{{ "header.Skill Set" | translate }}</a>
+        <a class="link" [class.active]="scrollService.isSkillSetInView" href="#skillSet" [title]="'header.Skill Set' | translate">{{ "header.Skill Set" | translate }}</a>
       </div>
       <div>
-        <a class="link" href="#myWork" [title]="'header.My Projects' | translate">{{ "header.My Projects" | translate }}</a>
+        <a class="link" [class.active]="scrollService.isMyWorkInView" href="#myWork" [title]="'header.My Projects' | translate">{{ "header.My Projects" | translate }}</a>
       </div>
       @for (language of languages; track $index) {
         <div>
           <a
             class="link"
             [title]="language | translate"
+            [class.active]="language == translateService.currentLang"
             (click)="changeLanguage(language)"
           >{{ language | translate }}</a>
         </div>
@@ -81,22 +82,23 @@
 <div class="menu-overlay" [ngClass]="{'openMenu': isMenuOpen}">
   <div class="menu-overlay-links">
     <div>
-      <a class="link" (click)="navigateTo('aboutMe')">{{ "header.About me" | translate }}</a>
+      <a class="link" [class.active]="scrollService.isAboutMeInView" (click)="navigateTo('aboutMe')">{{ "header.About me" | translate }}</a>
     </div>
     <div>
-      <a class="link" (click)="navigateTo('skillSet')">{{ "header.Skill Set" | translate }}</a>
+      <a class="link" [class.active]="scrollService.isSkillSetInView" (click)="navigateTo('skillSet')">{{ "header.Skill Set" | translate }}</a>
     </div>
     <div>
-      <a class="link" (click)="navigateTo('myWork')">{{ "header.My Projects" | translate }}</a>
+      <a class="link" [class.active]="scrollService.isMyWorkInView" (click)="navigateTo('myWork')">{{ "header.My Projects" | translate }}</a>
     </div>
     <div>
-      <a class="link" (click)="navigateTo('contact')">{{ "contact.title" | translate }}</a>
+      <a class="link" [class.active]="scrollService.isContactInView" (click)="navigateTo('contact')">{{ "contact.title" | translate }}</a>
     </div>
     @for (language of languages; track $index) {
       <div>
         <a
           class="link"
           (click)="changeLanguageAndCloseMenu(language)"
+          [class.active]="language == translateService.currentLang"
         >{{ language | translate }}</a>
       </div>
     }
