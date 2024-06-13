@@ -1,0 +1,69 @@
+{
+  "en": "En",
+  "de": "De",
+  "ro": "Ro",
+  "header": {
+    "About me": "About me",
+    "Skill Set": "Skill set",
+    "My Projects": "My projects"
+  },
+  "footer": {
+    "Imprint": "Imprint"
+  },
+  "aboutMe": {
+    "title": "Let's work together",
+    "description": "I am a software engineer based in East Brandenburg, Germany. I enjoy helping designers and companies bring their ideas into real life. I am looking forward to continuing my Engineer career with a job in a junior software engineering position.",
+    "recency": "If you think I’d be a good match for your projects, contact me!",
+    "button": "Send a message"
+  },
+  "aboveTheFold": {
+    "title": "Hi, I'm Bianca,",
+    "description1": "Software",
+    "description2": "Engineer",
+    "scroll": "Scroll"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Got a problem to solve?",
+    "descriptionText": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "recency1": "Need a Frontend developer?",
+    "recency2": "Contact me!",
+    "labelName": "Your name",
+    "labelEmail": "Your email",
+    "labelMessage": "Your message",
+    "errorName": "Your name is required",
+    "errorEmail": "Your email is required",
+    "errorMessage": "Your message is empty",
+    "privacyPolicy": {
+      "first": "I've read the ",
+      "link": "privacy policy",
+      "last": "and agree to the processing of my data as outlined."
+    },
+    "checkboxError": "Please accept the privacy policy.",
+    "button": "Say hello ;)"
+  },
+  "myWork": {
+    "projects": {
+      "Join": {
+        "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+      },
+      "Sharkie": {
+        "description": "Swim and throw game based on object-oriented approach. Help Sharkie to find coins and poison bottles to fight against the Orca."
+      },
+      "Pokédex": {
+        "description": "Based on the PokéAPI a simple library that provides and catalogues pokemons information."
+      }
+    },
+    "title": "My work",
+    "titleDescription": "Feel free to try out my latest web development projects and look into their code."
+  },
+  "skills": {
+    "title": "Skill Set"
+  },
+  "imprint": {
+    "title": "Imprint",
+    "description": "This website is created by:",
+    "country": "Germany",
+    "phone": "Phone"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "en": "Eng",
+  "de": "Ger",
+  "ro": "Rom",
+  "header": {
+    "About me": "Despre mine",
+    "Skill Set": "Calificări",
+    "My Projects": "Proiectele mele"
+  },
+  "footer": {
+    "Imprint": "Imprima"
+  },
+  "aboutMe": {
+    "title": "Hai să lucrăm împreună",
+    "description": "Sunt un inginer de software stabilită în parte de est în Brandenburg, Germania. Mă bucur să ajut designerii și companiile să își transpună ideile în viața reală. Aștept cu nerăbdare să îmi continui cariera de inginer cu un loc de muncă într-o poziție de inginer software junior.",
+    "recency": "Dacă credeți că m-aș potrivi pentru proiectele dumneavoastră, contactați-mă!",
+    "button": "Trimite un mesaj"
+  },
+  "aboveTheFold": {
+    "title": "Salut, sunt Bianca,",
+    "description1": "Inginer",
+    "description2": "software",
+    "scroll": "Derulați"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Ai o problemă de rezolvat?",
+    "descriptionText": "Contactați-mă prin acest formular, sunt interesată să aud de dvs., să vă cunosc ideile și să contribui la proiectele dvs. prin munca mea.",
+    "recency1": "Aveți nevoie de un inginer software?",
+    "recency2": "Contactați-mă!",
+    "labelName": "Numele dumneavoastră",
+    "labelEmail": "Adresa de e-mail",
+    "labelMessage": "Mesajul dumneavoastră",
+    "errorName": "Numele dumneavoastră este necesar",
+    "errorEmail": "E-mailul dumneavoastră este necesar",
+    "errorMessage": "Mesajul dumneavoastră este gol",
+    "privacyPolicy": {
+      "first": "Am citit ",
+      "link": "politica de confidențialitate",
+      "last": " și sunt de acord cu prelucrarea datelor mele așa cum sunt prezentate."
+    },
+    "checkboxError": "Vă rugăm să acceptați politica de confidențialitate.",
+    "button": "Salutăți-mă ;)"
+  },
+  "myWork": {
+    "projects": {
+      "Join": {
+        "description": "Manager de sarcini inspirat de sistemul Kanban. Creați și organizați sarcini utilizând funcțiile de glisare și fixare, atribuiți utilizatori și categorii."
+      },
+      "Sharkie": {
+        "description": "Joc de înot și aruncare bazat pe o abordare orientată pe obiecte. Ajută-l pe Sharkie să găsească monede și sticle de otravă pentru a lupta împotriva Orca."
+      },
+      "Pokédex": {
+        "description": "Bazat pe PokéAPI, o bibliotecă simplă care furnizează și cataloghează informații despre pokemoni."
+      }
+    },
+    "title": "Proiectele mele",
+    "titleDescription": "Simțiți-vă liber să încercați ultimele mele proiecte de dezvoltare web și să vă uitați în codul lor."
+  },
+  "skills": {
+    "title": "Calificările mele"
+  },
+  "imprint": {
+    "title": "Imprima",
+    "description": "Această pagină a fost creată de:",
+    "country": "Germania",
+    "phone": "Telefon"
+  }
+}

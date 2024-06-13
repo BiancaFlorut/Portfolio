@@ -1,0 +1,69 @@
+{
+  "en": "En",
+  "de": "De",
+  "ro": "Ro",
+  "header": {
+    "About me": "Über mich",
+    "Skill Set": "Fähigkeiten",
+    "My Projects": "Meine Projekte"
+  },
+  "footer": {
+    "Imprint": "Impressum"
+  },
+  "aboutMe": {
+    "title": "Lass uns zusammen arbeiten",
+    "description": "Ich bin Softwareentwicklerin in Ostbrandenburg, Deutschland. Es macht mir Spaß, Designern und Unternehmen zu helfen, ihre Ideen in die Realität umzusetzen. Ich freue mich darauf, meine Karriere als Ingenieurin fortzusetzen und eine Stelle als Junior Softwareentwicklerin zu finden.",
+    "recency": "Wenn Sie glauben, dass ich gut zu Ihren Projekten passen würde, kontaktieren Sie mich!",
+    "button": "Sende eine Nachricht"
+  },
+  "aboveTheFold": {
+    "title": "Hallo, ich bin Bianca,",
+    "description1": "Software",
+    "description2": "Entwicklerin",
+    "scroll": "Scrollen"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "description": "Haben Sie ein Problem zu lösen?",
+    "descriptionText": "Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+    "recency1": "Brauchen Sie einen Software Entwickler?",
+    "recency2": "Kontaktieren Sie mich!",
+    "labelName": "Ihr Name",
+    "labelEmail": "Ihre E-Mail",
+    "labelMessage": "Ihre Nachricht",
+    "errorName": "Ihr Name ist erforderlich",
+    "errorEmail": "Ihre E-mail ist erforderlich",
+    "errorMessage": "Ihre Nachricht ist leer",
+    "privacyPolicy": {
+      "first": "Ich habe die ",
+      "link": "Datenschutzbestimmungen",
+      "last": " gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu."
+    },
+    "checkboxError": "Bitte akzeptieren Sie die Datenschutzbestimmungen.",
+    "button": "Hallo sagen ;)"
+  },
+  "myWork": {
+    "projects": {
+      "Join": {
+        "description": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu."
+      },
+      "Sharkie": {
+        "description": "Schwimm- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Sharkie, Münzen und Giftflaschen zu finden, um gegen den Orca zu kämpfen."
+      },
+      "Pokédex": {
+        "description": "Basierend auf der PokéAPI eine einfache Bibliothek, die Informationen über Pokémon bereitstellt und katalogisiert."
+      }
+    },
+    "title": "Meine Projekte",
+    "titleDescription": "Probieren Sie meine neuesten Webentwicklungsprojekte aus und schauen Sie sich deren Code an."
+  },
+  "skills": {
+    "title": "Meine Faehigkeiten"
+  },
+  "imprint": {
+    "title": "Impressum",
+    "description": "Diese Website wurde erstellt von:",
+    "country": "Deutschland",
+    "phone": "Telefonnummer"
+  }
+}
