@@ -3,7 +3,7 @@ import { FormControl, FormsModule, NgForm, ReactiveFormsModule, Validators } fro
 import { ButtonComponent } from '../../shared/button/button.component';
 import { HttpClient } from '@angular/common/http';
 import { LangChangeEvent, TranslateModule, TranslateService } from '@ngx-translate/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -31,7 +31,6 @@ export class ContactComponent {
 
   nameError = false;
   mailTest = false;
-  dialogOpen = false;
 
   emailControl = new FormControl('', [Validators.required, Validators.pattern('[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}')]);
 
@@ -47,6 +46,7 @@ export class ContactComponent {
       },
     },
   };
+  router = inject(Router);
 
   constructor(private translate: TranslateService) {
     this.changePlaceholders();
@@ -69,16 +69,12 @@ export class ContactComponent {
           error: (error) => {
             console.error(error);
           },
-          complete: () => {console.info('send post complete'); this.dialogOpen=true;},
+          complete: () => {console.info('send post complete'); this.router.navigate(['success-message']);},
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
 
       ngForm.resetForm();
     }
-  }
-
-  closeDialog() {
-    this.dialogOpen = false;
   }
 
   onFocus(input: string) {

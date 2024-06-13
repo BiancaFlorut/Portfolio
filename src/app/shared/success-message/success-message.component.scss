@@ -1,0 +1,21 @@
+@import "../../../shared/shared_var.scss";
+
+.dialog-bg {
+  width: 100%;
+  height: 100%;
+  @include displayFlex(row, center, center);
+    max-width: $maxWidth;
+    padding: 0 $sidePadding;
+    padding-top: 120px;
+    box-sizing: border-box;
+  .dialog {
+    width: 60%;
+    font-size: 24px;
+    padding: 40px;
+    border-radius: 16px;
+    border: 2px solid $strongRed;
+    background-color: white;
+    @include displayFlex(column, center, center);
+    gap : 20px;
+  }
+}

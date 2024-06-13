@@ -243,28 +243,6 @@ textarea::placeholder {
   padding-top: 12px;
 }
 
-.dialog-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
-  backdrop-filter: blur(10px);
-  z-index: 1000;
-  @include displayFlex(row, center, center);
-  display: none;
-  .dialog {
-    padding: 20px;
-    background-color: white;
-  }
-}
-
-.dialog-bg-active {
-  display: flex;
-}
-
 @media (max-width: 1300px) {
   .container {
     padding: 0 $sidePaddingTablet;
