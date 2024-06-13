@@ -1,6 +1,6 @@
 import { CommonModule, ViewportScroller } from '@angular/common';
 import { Component, inject } from '@angular/core';
-import {  RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ScrollService } from '../../services/scroll.service';
 
@@ -16,6 +16,7 @@ export class HeaderComponent {
   languages = ['en', 'de', 'ro'];
   translateService = inject(TranslateService);
   scrollService = inject(ScrollService);
+  router = inject(Router);
 
   constructor(private readonly scroller: ViewportScroller) { }
 
@@ -23,7 +24,12 @@ export class HeaderComponent {
     this.isMenuOpen = !this.isMenuOpen;
   }
 
-  navigateTo(id: string) {
+  async navigateTo(id: string) {
+
+    if (this.router.url != '/') {
+      await this.router.navigate(['/']);
+    }
+    this.scroller.setOffset([0, 60]);
     this.scroller.scrollToAnchor(id);
     this.closeMenu();
   }
@@ -52,6 +58,10 @@ export class HeaderComponent {
   changeLanguage(language: string) {
     this.translateService.use(language);
     localStorage.setItem('lang', language);
+  }
+
+  goToFragment(id: string) {
+    this.scroller.scrollToAnchor(id);
   }
 
 }

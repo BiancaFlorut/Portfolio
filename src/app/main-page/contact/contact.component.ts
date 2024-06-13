@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { FormsModule, NgForm } from '@angular/forms';
+import { FormControl, FormsModule, NgForm, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ButtonComponent } from '../../shared/button/button.component';
 import { HttpClient } from '@angular/common/http';
 import { LangChangeEvent, TranslateModule, TranslateService } from '@ngx-translate/core';
@@ -8,7 +8,7 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, ButtonComponent, TranslateModule, RouterLink],
+  imports: [FormsModule, ButtonComponent, TranslateModule, RouterLink, ReactiveFormsModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -31,11 +31,14 @@ export class ContactComponent {
 
   nameError = false;
   mailTest = false;
+  dialogOpen = false;
+
+  emailControl = new FormControl('', [Validators.required, Validators.pattern('[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}')]);
 
   http = inject(HttpClient);
 
   post = {
-    endPoint: 'https://biancaflorut.github.io//sendMail.php',
+    endPoint: '/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -66,12 +69,16 @@ export class ContactComponent {
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => {console.info('send post complete'); this.dialogOpen=true;},
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
 
       ngForm.resetForm();
     }
+  }
+
+  closeDialog() {
+    this.dialogOpen = false;
   }
 
   onFocus(input: string) {

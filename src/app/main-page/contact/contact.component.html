@@ -63,9 +63,9 @@
           </div>
           <div class="error">
             <div class="error-icon">
-              @if (!email.valid && email.touched) {
+              @if (!emailControl.valid && emailControl.touched) {
               <div><img src="./assets/icons/error.svg" alt="" /></div>
-              } @else if (email.valid && email.touched) {
+              } @else if (emailControl.valid && emailControl.touched) {
               <div><img src="./assets/icons/accepted.svg" alt="" /></div>
               }
             </div>
@@ -76,12 +76,12 @@
             placeholder="{{ emailPlaceholder }}"
             name="email"
             (focus)="onFocus('email')"
-            required
-            #email="ngModel"
-            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+            required         
+            #emailControl="ngModel"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  
           />
           <div class="error text">
-            @if (!email.valid && email.touched) {
+            @if (!emailControl.valid && emailControl.touched) {
             <span>{{ 'contact.errorEmail' | translate }}</span>
             }
           </div>
@@ -129,7 +129,7 @@
               </div>
             </div>
             <div class="error">
-              @if (!privacyPolicyChecked && (email.valid || name.valid ||
+              @if (!privacyPolicyChecked && (emailControl.valid || name.valid ||
               message.valid)) {
               <span>{{ 'contact.checkboxError' | translate }}</span>
               }
@@ -182,5 +182,14 @@
         </defs>
       </svg>
     </a>
+  </div>
+  <div class="dialog-bg" (click)="closeDialog()" [class.dialog-bg-active]="dialogOpen">
+    <div class="dialog">
+      <span>Message was sent! Thank you for your time.</span>
+      <app-button
+        [buttonText]="'contact.button' | translate"
+        (click)="closeDialog()"
+      ></app-button>
+    </div>
   </div>
 </section>

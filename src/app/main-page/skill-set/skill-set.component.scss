@@ -51,6 +51,10 @@ section {
     >img {
       height: 75px;
     }
+    >span {
+      @include displayFlex(row, center, center);
+      height: 38px;
+    }
   }
 }
 
@@ -69,7 +73,7 @@ section {
     gap: 74px;
     row-gap: 17px;
     >div {
-      height: 100px;
+      height: 118px;
       text-align: center;
       >img {
         height: 60px;

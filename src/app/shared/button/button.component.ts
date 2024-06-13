@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-button',
@@ -13,4 +14,12 @@ export class ButtonComponent {
   @Input() link: string = '';
   @Input() disabled: boolean = false;
   @Input() class: string = '';
+  @Input() anchor: string = '';
+
+  private scroller = inject(ViewportScroller);
+
+  scrollTo(id: string) {
+    this.scroller.setOffset([0, 60]);
+    this.scroller.scrollToAnchor(id);
+  }
 }

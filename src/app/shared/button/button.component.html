@@ -1,6 +1,15 @@
-
-  <div class="button-container">
-    <button [disabled]="disabled" [class]="class">
-      <span>{{ buttonText }}</span>
-    </button>
-  </div>
+<div class="button-container">
+  @if (anchor.length > 0) {
+  <button
+    [disabled]="disabled"
+    [class]="class"
+    (click)="scrollTo(anchor)"
+  >
+    <span>{{ buttonText }}</span>
+  </button>
+  } @else {
+  <button [disabled]="disabled" [class]="class">
+    <span>{{ buttonText }}</span>
+  </button>
+  }
+</div>

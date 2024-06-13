@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './privacy-policy.component.scss'
 })
 export class PrivacyPolicyComponent {
+
+  ngOnInit() {
+    window.scrollTo(0, 0);
+  }
   myField = `
   <style>
   [data-custom-class='body'], [data-custom-class='body'] * {
