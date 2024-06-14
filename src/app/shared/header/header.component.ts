@@ -64,7 +64,9 @@ export class HeaderComponent {
     if (this.router.url != '/') {
       await this.router.navigate(['/']);
     }
-    this.scroller.scrollToAnchor(id);
+    setTimeout(() => {
+      this.scroller.scrollToAnchor(id);
+    }, 50);
   }
 
 }
