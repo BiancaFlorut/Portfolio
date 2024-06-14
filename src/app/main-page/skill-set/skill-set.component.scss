@@ -54,6 +54,7 @@ section {
     >span {
       @include displayFlex(row, center, center);
       height: 38px;
+      text-align: center;
     }
   }
 }

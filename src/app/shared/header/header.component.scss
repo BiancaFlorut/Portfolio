@@ -64,6 +64,8 @@ header {
     cursor: pointer;
     background-image: url("../../../assets/icons/logo_full.png");
     background-size: contain;
+    background-repeat: no-repeat;
+  background-position: center;
     transition: all 100ms ease-in-out;
   &:hover {
     background-image: url("../../../assets/icons/logos/logo4.png");
@@ -77,6 +79,8 @@ header {
   cursor: pointer;
   background-image: url("../../../assets/icons/logos/logo4.png");
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   transition: all 100ms ease-in-out;
 &:hover {
   background-image: url("../../../assets/icons/logo_full.png");

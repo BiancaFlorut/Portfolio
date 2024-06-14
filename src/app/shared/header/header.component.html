@@ -1,7 +1,7 @@
 <header>
   <div class="container">
     @if (isMenuOpen) {
-      <div class="logo_light"  alt="logo_light" (click)="toggleMenu()"></div>
+      <div class="logo_light"  alt="logo_light" (click)="navigateTo('')"></div>
     } @else {
       <div class="logo" [routerLink]="''">
       </div>
