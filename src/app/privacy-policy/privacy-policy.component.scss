@@ -1,5 +1,23 @@
+@import "../../shared/shared_var.scss";
+
 section {
   width: 100%;
   padding: 120px 100px;
   box-sizing: border-box;
+  max-width: $maxWidth;
+  word-break: break-word;
+}
+
+@media (max-width: 1300px) {
+  section {
+    padding-left: $sidePaddingTablet;
+    padding-right: $sidePaddingTablet;
+  }
+}
+
+@media (max-width: 530px) {
+  section {
+    padding-left: $sidePaddingMobile;
+    padding-right: $sidePaddingMobile;
+  }
 }
