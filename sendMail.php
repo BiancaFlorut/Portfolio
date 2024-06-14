@@ -2,7 +2,7 @@
 
 ########### CONFIG ###############
 
-$recipient = 'johana_ar@yahoo.com';
+$recipient = 'mail@bianca-florut.com';
 $redirect = 'success.html';
 
 ########### CONFIG END ###########
@@ -31,7 +31,7 @@ $redirect = 'success.html';
 ###############################
 
 if (empty($recipient)) {
-    die("Bitte geben Sie die E-Mail-Adresse in Zeile 5 an.");
+    die("Bitte geben Sie die E-Mail-Adresse.");
 }
 
 switch ($_SERVER['REQUEST_METHOD']) {

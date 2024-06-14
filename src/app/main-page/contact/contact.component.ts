@@ -32,7 +32,7 @@ export class ContactComponent {
   nameError = false;
   mailTest = false;
 
-  emailControl = new FormControl('', [Validators.required, Validators.pattern('[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}')]);
+  emailControl = Validators.pattern('[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}');
 
   http = inject(HttpClient);
 
@@ -72,8 +72,9 @@ export class ContactComponent {
           complete: () => {console.info('send post complete'); this.router.navigate(['success-message']);},
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
       ngForm.resetForm();
+      this.router.navigate(['success-message']);
+      
     }
   }
 

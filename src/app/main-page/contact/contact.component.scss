@@ -59,7 +59,7 @@ section {
   max-width: $maxWidth;
   z-index: -1;
   .ellipse1 {
-    @include absPosition(380px, unset, unset, 242px, 204px);
+    @include absPosition(400px, unset, unset, 242px, 204px);
   }
   .ellipse2 {
     @include absPosition(604px, 91px, unset, unset, 73px);

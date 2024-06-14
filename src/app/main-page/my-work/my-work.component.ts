@@ -17,7 +17,7 @@ export class MyWorkComponent {
       img: './assets/project imgs/join.png',
       tech: ['JavaScript', 'HTML', 'CSS', 'Scrum'],
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
-      link: 'https://biancaflorut.github.io/Join-Standalone/',
+      link: 'http://join.bianca-florut.com/',
       github: 'https://github.com/BiancaFlorut/Join-Standalone'
     },
     {
@@ -26,7 +26,7 @@ export class MyWorkComponent {
       tech: ['JavaScript', 'HTML', 'CSS'],
       description: 'Swim, run and throw game based on object-oriented approach. Help Sharkie to find coins and poison bottles to fight against the Orca.',
       github: 'https://github.com/BiancaFlorut/Sharkie',
-      link: 'https://biancaflorut.github.io/Sharkie/'
+      link: 'http://sharkie.bianca-florut.com/'
     },
     {
       name: 'Pokédex',
@@ -34,7 +34,7 @@ export class MyWorkComponent {
       tech: ['JavaScript', 'HTML', 'CSS', 'API'],
       description: 'Based on the PokéAPI a simple library that provides and catalogues pokémon information.',
       github: 'https://github.com/BiancaFlorut/Pokedex',
-      link: 'https://biancaflorut.github.io/Pokedex/'
+      link: 'http://pokedex.bianca-florut.com/'
     }
   ];
 

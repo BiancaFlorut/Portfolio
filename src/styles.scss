@@ -36,6 +36,10 @@ app-imprint, app-success-message {
   width: 100%;
 }
 
+app-success-message {
+  @include displayFlex(column, center, center);
+}
+
 body,
 html,
 app-main-page {

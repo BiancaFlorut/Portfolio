@@ -60,7 +60,10 @@ export class HeaderComponent {
     localStorage.setItem('lang', language);
   }
 
-  goToFragment(id: string) {
+  async goToFragment(id: string) {
+    if (this.router.url != '/') {
+      await this.router.navigate(['/']);
+    }
     this.scroller.scrollToAnchor(id);
   }
 
