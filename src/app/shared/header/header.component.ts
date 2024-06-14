@@ -29,8 +29,11 @@ export class HeaderComponent {
     if (this.router.url != '/') {
       await this.router.navigate(['/']);
     }
-    this.scroller.setOffset([0, 60]);
+    setTimeout(() => {
+      this.scroller.setOffset([0, 60]);
     this.scroller.scrollToAnchor(id);
+    }, 50);
+    
     this.closeMenu();
   }
 

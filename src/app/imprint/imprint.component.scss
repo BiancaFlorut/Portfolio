@@ -10,7 +10,9 @@ section {
     max-width: $maxWidth;
     padding: 0 $sidePadding;
     padding-top: 120px;
+    padding-bottom: 60px;
     box-sizing: border-box;
+    overflow-x: clip;
     h1 {
       font-family: "Baloo", sans-serif;
       font-weight: 800;
@@ -68,12 +70,20 @@ section {
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 680px) {
   .ellipse-container {
     .ellipse3 {
       right: -260px;
     }
     .ellipse2 {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .ellipse-container {
+    .ellipse3 {
       display: none;
     }
   }

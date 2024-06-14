@@ -1,9 +1,10 @@
 <header>
   <div class="container">
     @if (isMenuOpen) {
-      <img src="./assets/icons/logos/logo4.png" alt="logo_light" [routerLink]="''" />
+      <div class="logo_light"  alt="logo_light" (click)="toggleMenu()"></div>
     } @else {
-      <img src="./assets/icons/logo.png" class="logo" alt="logo" [routerLink]="''" />
+      <div class="logo" [routerLink]="''">
+      </div>
     }
     <div class="menu" id ="menu" (click)="toggleMenu()">
       <svg
