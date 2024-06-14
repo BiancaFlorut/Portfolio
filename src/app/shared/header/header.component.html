@@ -65,6 +65,7 @@
       </div>
       <div>
         <a class="link" [class.active]="scrollService.isMyWorkInView" (click)="goToFragment('myWork')" [title]="'header.My Projects' | translate">{{ "header.My Projects" | translate }}</a>
+        <!-- <a class="link" [class.active]="scrollService.isMyWorkInView" [routerLink]="''" fragment="myWork" [title]="'header.My Projects' | translate">{{ "header.My Projects" | translate }}</a> -->
       </div>
       @for (language of languages; track $index) {
         <div>

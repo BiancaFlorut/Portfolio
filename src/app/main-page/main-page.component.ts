@@ -5,6 +5,8 @@ import { SkillSetComponent } from './skill-set/skill-set.component';
 import { MyWorkComponent } from './my-work/my-work.component';
 import { ContactComponent } from './contact/contact.component';
 import { ScrollService } from '../services/scroll.service';
+import { ActivatedRoute } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-main-page',
@@ -21,6 +23,8 @@ export class MainPageComponent {
 
 
   scrollService = inject(ScrollService);
+  private activeRoute = inject(ActivatedRoute);
+  private viewPortScroller = inject(ViewportScroller);
 
   @HostListener('document:scroll', ['$event'])
   public onViewportScroll() {
@@ -36,5 +40,10 @@ export class MainPageComponent {
     this.scrollService.onViewportScroll(data, windowHeight);
   }
   
-
+  ngOnInit() {
+    this.activeRoute.fragment.subscribe((fragment) => {
+      if (fragment)
+      this.viewPortScroller.scrollToAnchor(fragment);
+    });
+  }
 }
