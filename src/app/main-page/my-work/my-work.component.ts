@@ -18,7 +18,7 @@ export class MyWorkComponent {
       tech: ['JavaScript', 'HTML', 'CSS', 'Scrum'],
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       link: 'http://join.bianca-florut.com/',
-      github: 'https://github.com/BiancaFlorut/Join-Standalone'
+      github: 'https://github.com/BiancaFlorut/Join'
     },
     {
       name: 'Sharkie',
