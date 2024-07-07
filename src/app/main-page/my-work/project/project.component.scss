@@ -85,7 +85,7 @@
 }
 
 .buttons {
-  width: 100%;	
+  width: 100%;
   @include displayFlex(row, center, unset);
   gap: 51px;
 }
@@ -146,6 +146,20 @@
   .padding_right {
     padding-right: 0;
   }
+}
+
+.wip-container {
+  @include displayFlex(row, center, flex-end);
+  width: 100%;
+  height: 100%;
+}
+
+.wip {
+  filter: grayscale(100%);
+  cursor: default;
+  max-height: 80%;
+  object-fit: contain;
+  box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 405px) {

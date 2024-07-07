@@ -2,7 +2,12 @@
   @if (project) {
   <div class="left">
     <div class="img-container" [class.jc_start]="!rowReverse" [class.jc_end]="rowReverse">
-      <a href="{{ project.link }}" target="_blank"><img src="{{ project.img }}" alt="{{ project.name }}" /></a>
+      @if (wip) {
+        <div class="wip-container"><img class="wip" src="{{ project.img }}" alt="{{ project.name }}" /></div>
+      } @else {
+        <a href="{{ project.link }}" target="_blank"><img src="{{ project.img }}" alt="{{ project.name }}" /></a>
+      }
+      
     </div>
   </div>
   <div class="right" [class.alignRight]="rowReverse" [class.padding_left]="!rowReverse" [class.padding_right]="rowReverse">
@@ -18,8 +23,8 @@
       <div class="description">{{ project.description }}</div>
     </div>
     <div class="buttons">
-      <app-button [buttonText]="'Live test'" class="live-test-button" [class]="'strong-red'" [link]="project.link" (click)="openLink(project.link)"></app-button>
-      <app-button [buttonText]="'GitHub'" [link]="project.link" (click)="openLink(project.github)"></app-button>
+      <app-button [buttonText]="'Live test'" [disabled]="wip" class="live-test-button" [class]="'strong-red'" [link]="project.link" (click)="openLink(project.link)"></app-button>
+      <app-button [buttonText]="'GitHub'" [disabled]="wip" [link]="project.link" (click)="openLink(project.github)"></app-button>
     </div>
   </div>
   }

@@ -44,6 +44,9 @@
   },
   "myWork": {
     "projects": {
+      "DA-Bubble WIP": {
+        "description": "Eine Chat-Messenger-App, die von Slack oder Discord inspiriert ist und es Benutzern ermöglicht, sich in Kanälen oder per Direktnachricht miteinander zu verbinden."
+      },
       "Join": {
         "description": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu."
       },

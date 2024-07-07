@@ -44,6 +44,9 @@
   },
   "myWork": {
     "projects": {
+      "DA-Bubble WIP": {
+        "description": "A chat messenger app is inspired by Slack or Discord and allows users to communicate with each other through channels or direct messages."
+      },
       "Join": {
         "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
       },

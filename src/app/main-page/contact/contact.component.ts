@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { FormControl, FormsModule, NgForm, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormsModule, NgForm, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ButtonComponent } from '../../shared/button/button.component';
 import { HttpClient } from '@angular/common/http';
 import { LangChangeEvent, TranslateModule, TranslateService } from '@ngx-translate/core';

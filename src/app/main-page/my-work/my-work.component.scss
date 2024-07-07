@@ -137,11 +137,14 @@ app-project {
   .container {
     padding: 93px $sidePaddingMobile 15px $sidePaddingMobile;
   }
+  .ellipse-container {
+    .ellipse2 {
+      top: 360px;
+    }
+  }
 }
 
 @media (max-width: 530px) {
-
-
   .ellipse-container {
     .ellipse5 {
       display: none;

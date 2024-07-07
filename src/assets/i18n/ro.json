@@ -44,6 +44,9 @@
   },
   "myWork": {
     "projects": {
+      "DA-Bubble WIP": {
+        "description": "O aplicație de chat messenger, inspirată de Slack sau Discord și permite utilizatorilor să comunice prin canale sau mesaje directe."
+      },
       "Join": {
         "description": "Manager de sarcini inspirat de sistemul Kanban. Creați și organizați sarcini utilizând funcțiile de glisare și fixare, atribuiți utilizatori și categorii."
       },

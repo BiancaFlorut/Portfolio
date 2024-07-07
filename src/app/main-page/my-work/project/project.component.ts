@@ -12,6 +12,7 @@ import { ButtonComponent } from '../../../shared/button/button.component';
 export class ProjectComponent {
   @Input() project: Project | undefined;
   @Input() rowReverse: boolean = false;
+  @Input() wip: boolean = false;
 
   
 

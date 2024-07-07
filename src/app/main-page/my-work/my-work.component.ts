@@ -13,6 +13,14 @@ import { LangChangeEvent, TranslateModule, TranslateService } from '@ngx-transla
 export class MyWorkComponent {
   projects: Project[] = [
     {
+      name: 'DA-Bubble WIP',
+      img: './assets/project imgs/da-bubble.png',
+      tech: ['Angular', 'TypeScript', 'Firebase', 'SCSS'],
+      description: 'A chat messenger app is inspired by Slack or Discord and allows users to communicate with each other through channels or direct messages.',
+      github: 'https://github.com/BiancaFlorut/DA-Bubble',
+      link: 'http://da-bubble.bianca-florut.com/'
+    },
+    {
       name: 'Join',
       img: './assets/project imgs/join.png',
       tech: ['JavaScript', 'HTML', 'CSS', 'Scrum'],
